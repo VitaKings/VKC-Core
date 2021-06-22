@@ -151,3 +151,13 @@ contrib/devtools/split-debug.sh
 
 # Qt creator
 *.pro.user
+
+.vs/ProjectSettings.json
+
+.vs/slnx.sqlite
+
+.vs/VKC-Core/v16/.suo
+
+.vs/VKC-Core/v16/Browse.VC.db
+
+.vs/VSWorkspaceState.json

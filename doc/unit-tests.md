@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the esbcoind tests manually, launch src/test/test_esbcoin .
+To run the vkcoind tests manually, launch src/test/test_vkcoin .
 
-To add more esbcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more vkcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the esbcoin-qt tests manually, launch src/qt/test/esbcoin-qt_test
+To run the vkcoin-qt tests manually, launch src/qt/test/vkcoin-qt_test
 
-To add more esbcoin-qt tests, add them to the `src/qt/test/` directory and
+To add more vkcoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

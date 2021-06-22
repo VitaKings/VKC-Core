@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1783,13 +1783,13 @@ bool CWallet::SelectCoins(const CAmount& nTargetValue, set<pair<const CWalletTx*
         return (nValueRet >= nTargetValue);
     }
 
-    //if we're doing only denominated, we need to round up to the nearest .1 esbcoin
+    //if we're doing only denominated, we need to round up to the nearest .1 vkcoin
     if (coin_type == ONLY_DENOMINATED) {
         // Make outputs by looping through denominations, from large to small
         for (CAmount v : obfuScationDenominations) {
             for (const COutput& out : vCoins) {
                 if (out.tx->vout[out.i].nValue == v                                               //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 esbcoin over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1 * COIN) + 100 //round the amount up to .1 vkcoin over
                     ) {
                     CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
                     int rounds = GetInputObfuscationRounds(vin);
@@ -1851,12 +1851,12 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, CAmount nValueMin, CAmount 
 
             // Function returns as follows:
             //
-            // bit 0 - 10000 esbcoin+1 ( bit on if present )
-            // bit 1 - 1000 esbcoin+1
-            // bit 2 - 100 esbcoin+1
-            // bit 3 - 10 esbcoin+1
-            // bit 4 - 1 esbcoin+1
-            // bit 5 - .1 esbcoin+1
+            // bit 0 - 10000 vkcoin+1 ( bit on if present )
+            // bit 1 - 1000 vkcoin+1
+            // bit 2 - 100 vkcoin+1
+            // bit 3 - 10 vkcoin+1
+            // bit 4 - 1 vkcoin+1
+            // bit 5 - .1 vkcoin+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(), out.i);
 
@@ -2186,9 +2186,9 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                     if (coin_type == ALL_COINS) {
                         strFailReason = _("Insufficient funds.");
                     } else if (coin_type == ONLY_NOTDEPOSITIFMN) {
-                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal MN collateral ESBC.");
+                        strFailReason = _("Unable to locate enough funds for this transaction that are not equal MN collateral VKC.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOTDEPOSITIFMN) {
-                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal MN collateral ESBC.");
+                        strFailReason = _("Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal MN collateral VKC.");
                     } else {
                         strFailReason = _("Unable to locate enough Obfuscation denominated funds for this transaction.");
                         strFailReason += " " + _("Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -2226,7 +2226,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-esbcoin-address
+                    // change transaction isn't always pay-to-vkcoin-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address
