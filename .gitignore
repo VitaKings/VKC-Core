@@ -161,3 +161,9 @@ contrib/devtools/split-debug.sh
 .vs/VKC-Core/v16/Browse.VC.db
 
 .vs/VSWorkspaceState.json
+
+.vs/VKC-Core/v16/Browse.VC.db-shm
+
+.vs/VKC-Core/v16/Browse.VC.db-wal
+
+.vs/VKC-Core/v16/Browse.VC.opendb
