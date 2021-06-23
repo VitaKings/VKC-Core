@@ -331,15 +331,15 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # vkccoind binary #
-vkcoind_SOURCES = vkccoind.cpp
-vkcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-vkcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-vkcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+vkccoind_SOURCES = vkccoind.cpp
+vkccoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+vkccoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+vkccoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-vkcoind_SOURCES += vkccoind-res.rc
+vkccoind_SOURCES += vkccoind-res.rc
 endif
-vkcoind_LDADD = \
+vkccoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -352,7 +352,7 @@ vkcoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-vkcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+vkccoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # vkcoin-cli binary #
 vkcoin_cli_SOURCES = vkcoin-cli.cpp

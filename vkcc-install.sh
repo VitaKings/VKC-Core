@@ -26,7 +26,7 @@ function delay { echo -e "${GREEN}Sleep for $1 seconds...${NC}"; sleep "$1"; }
 #Stop daemon if it's already running
 function stop_daemon {
     if pgrep -x 'vkccoind' > /dev/null; then
-        echo -e "${YELLOW}Attempting to stop vkcoind${NC}"
+        echo -e "${YELLOW}Attempting to stop vkccoind${NC}"
         vkccoind-cli stop
         sleep 30
         if pgrep -x 'vkccoind' > /dev/null; then
@@ -308,7 +308,7 @@ NOTE: To edit vkcoin.conf, first stop the vkccoind daemon,
 then edit the vkcoin.conf file and save it in nano: (Ctrl-X + Y + Enter),
 then start the vkccoind daemon back up:
 to stop:              ${GREEN}vkcoin-cli stop${NC}
-to start:             ${GREEN}vkcoind${NC}
+to start:             ${GREEN}vkccoind${NC}
 to edit:              ${GREEN}nano ~/.vkcoin/vkcoin.conf${NC}
 to check mn status:   ${GREEN}vkcoin-cli masternode status${NC}
 ========================================================================

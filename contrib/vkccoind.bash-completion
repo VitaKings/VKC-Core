@@ -5,7 +5,7 @@
 
 have vkccoind && {
 
-# call $vkcoind for RPC
+# call $vkccoind for RPC
 _vkcoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
@@ -16,7 +16,7 @@ _vkcoin_rpc() {
                 ;;
         esac
     done
-    $vkcoind "${rpcargs[@]}" "$@"
+    $vkccoind "${rpcargs[@]}" "$@"
 }
 
 # Add vkcoin accounts to COMPREPLY
@@ -26,7 +26,7 @@ _vkcoin_accounts() {
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_vkcoind() {
+_vkccoind() {
     local cur prev words=() cword
     local vkccoind
 
@@ -114,7 +114,7 @@ _vkcoind() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($vkcoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($vkccoind --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
@@ -133,7 +133,7 @@ _vkcoind() {
     esac
 }
 
-complete -F _vkcoind vkccoind vkcoin-cli
+complete -F _vkccoind vkccoind vkcoin-cli
 }
 
 # Local variables:

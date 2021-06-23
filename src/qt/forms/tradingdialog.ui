@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="vkcoindemand">
+    <widget class="QLabel" name="vkccoindemand">
      <property name="geometry">
       <rect>
        <x>160</x>
