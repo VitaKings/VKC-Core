@@ -4034,7 +4034,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use vkcoind, or the -server option to vkcoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use vkccoind, or the -server option to vkcoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=vkcoinrpc
@@ -4045,7 +4045,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "vkcoin Alert" admin@foo.com
 </source>
-        <translation>For at bruge vkcoind eller -server muligheden sammen med vkcoin-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge vkccoind eller -server muligheden sammen med vkcoin-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
 Rpcuser=vkcoinrpc

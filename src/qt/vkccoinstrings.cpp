@@ -150,7 +150,7 @@ QT_TRANSLATE_NOOP("vkcoin-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("vkcoin-core", ""
-"To use vkcoind, or the -server option to vkcoin-qt, you must set an rpcpassword "
+"To use vkccoind, or the -server option to vkcoin-qt, you must set an rpcpassword "
 "in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"

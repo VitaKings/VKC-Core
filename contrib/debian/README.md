@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package vkcoind/vkcoin-qt
-for Debian-based Linux systems. If you compile vkcoind/vkcoin-qt yourself, there are some useful files here.
+This directory contains files used to package vkccoind/vkcoin-qt
+for Debian-based Linux systems. If you compile vkccoind/vkcoin-qt yourself, there are some useful files here.
 
 ## vkcoin: URI support ##
 

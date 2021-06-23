@@ -5241,7 +5241,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use vkcoind, or the -server option to vkcoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use vkccoind, or the -server option to vkcoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=vkcoinrpc

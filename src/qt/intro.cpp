@@ -185,7 +185,7 @@ bool Intro::pickDataDirectory()
     }
     /* Only override -datadir if different from the default, to make it possible to
      * override -datadir in the vkcoin.conf file in the default data directory
-     * (to be consistent with vkcoind behavior)
+     * (to be consistent with vkccoind behavior)
      */
     if (dataDir != getDefaultDataDirectory())
         SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

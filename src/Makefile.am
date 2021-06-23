@@ -55,7 +55,7 @@ noinst_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += vkcoind
+  bin_PROGRAMS += vkccoind
 endif
 
 if BUILD_BITCOIN_UTILS
@@ -160,7 +160,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between vkcoind and vkcoin-qt
+# server: shared between vkccoind and vkcoin-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -202,7 +202,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between vkcoind and vkcoin-qt, but only linked
+# wallet: shared between vkccoind and vkcoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -262,7 +262,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_types.h
 
 
-# common: shared between vkcoind, and vkcoin-qt and non-server tools
+# common: shared between vkccoind, and vkcoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -330,14 +330,14 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# vkcoind binary #
-vkcoind_SOURCES = vkcoind.cpp
+# vkccoind binary #
+vkcoind_SOURCES = vkccoind.cpp
 vkcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 vkcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 vkcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-vkcoind_SOURCES += vkcoind-res.rc
+vkcoind_SOURCES += vkccoind-res.rc
 endif
 vkcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \

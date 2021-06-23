@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "VKC"
-            VALUE "FileDescription",    "vkcoind (OSS daemon/client for VKC)"
+            VALUE "FileDescription",    "vkccoind (OSS daemon/client for VKC)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "vkcoind"
+            VALUE "InternalName",       "vkccoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "vkcoind.exe"
-            VALUE "ProductName",        "vkcoind"
+            VALUE "OriginalFilename",   "vkccoind.exe"
+            VALUE "ProductName",        "vkccoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -7,13 +7,13 @@ User=vkcoin
 Group=vkcoin
 
 Type=forking
-PIDFile=/var/lib/vkcoind/vkcoind.pid
+PIDFile=/var/lib/vkccoind/vkccoind.pid
 
-ExecStart=/usr/bin/vkcoind -daemon -pid=/var/lib/vkcoind/vkcoind.pid \
-          -conf=/etc/vkcoin/vkcoin.conf -datadir=/var/lib/vkcoind
+ExecStart=/usr/bin/vkccoind -daemon -pid=/var/lib/vkccoind/vkccoind.pid \
+          -conf=/etc/vkcoin/vkcoin.conf -datadir=/var/lib/vkccoind
 
 ExecStop=-/usr/bin/vkcoin-cli -conf=/etc/vkcoin/vkcoin.conf \
-         -datadir=/var/lib/vkcoind stop
+         -datadir=/var/lib/vkccoind stop
 
 Restart=always
 PrivateTmp=true

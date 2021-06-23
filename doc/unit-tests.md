@@ -6,9 +6,9 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the vkcoind tests manually, launch src/test/test_vkcoin .
+To run the vkccoind tests manually, launch src/test/test_vkcoin .
 
-To add more vkcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more vkccoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 

@@ -1,9 +1,9 @@
-# bash programmable completion for vkcoind(1) and vkcoin-cli(1)
+# bash programmable completion for vkccoind(1) and vkcoin-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have vkcoind && {
+have vkccoind && {
 
 # call $vkcoind for RPC
 _vkcoin_rpc() {
@@ -28,11 +28,11 @@ _vkcoin_accounts() {
 
 _vkcoind() {
     local cur prev words=() cword
-    local vkcoind
+    local vkccoind
 
-    # save and use original argument to invoke vkcoind
-    # vkcoind might not be in $PATH
-    vkcoind="$1"
+    # save and use original argument to invoke vkccoind
+    # vkccoind might not be in $PATH
+    vkccoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -133,7 +133,7 @@ _vkcoind() {
     esac
 }
 
-complete -F _vkcoind vkcoind vkcoin-cli
+complete -F _vkcoind vkccoind vkcoin-cli
 }
 
 # Local variables:

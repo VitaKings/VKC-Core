@@ -13,8 +13,8 @@ The following are some helpful notes on how to run vkcoin on your native platfor
 
 Unpack the files into a directory and run:
 
-- bin/32/vkcoin-qt (GUI, 32-bit) or bin/32/vkcoind (headless, 32-bit)
-- bin/64/vkcoin-qt (GUI, 64-bit) or bin/64/vkcoind (headless, 64-bit)
+- bin/32/vkcoin-qt (GUI, 32-bit) or bin/32/vkccoind (headless, 32-bit)
+- bin/64/vkcoin-qt (GUI, 64-bit) or bin/64/vkccoind (headless, 64-bit)
 
 ### Windows
 
