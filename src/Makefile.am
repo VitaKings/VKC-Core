@@ -59,7 +59,7 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += vkcoin-cli vkcoin-tx
+  bin_PROGRAMS += vkccoin-cli vkcoin-tx
 endif
 
 .PHONY: FORCE
@@ -320,7 +320,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between vkcoin-cli and vkcoin-qt
+# cli: shared between vkccoin-cli and vkcoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -354,14 +354,14 @@ vkccoind_LDADD = \
 
 vkccoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# vkcoin-cli binary #
-vkcoin_cli_SOURCES = vkcoin-cli.cpp
+# vkccoin-cli binary #
+vkcoin_cli_SOURCES = vkccoin-cli.cpp
 vkcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 vkcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 vkcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-vkcoin_cli_SOURCES += vkcoin-cli-res.rc
+vkcoin_cli_SOURCES += vkccoin-cli-res.rc
 endif
 
 vkcoin_cli_LDADD = \
