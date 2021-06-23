@@ -72,9 +72,9 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("VKC Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  vkcoin-cli [options] <command> [params]  " + _("Send command to VKC Core") + "\n" +
-                        "  vkcoin-cli [options] help                " + _("List commands") + "\n" +
-                        "  vkcoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  vkccoin-cli [options] <command> [params]  " + _("Send command to VKC Core") + "\n" +
+                        "  vkccoin-cli [options] help                " + _("List commands") + "\n" +
+                        "  vkccoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

@@ -12,7 +12,7 @@ PIDFile=/var/lib/vkccoind/vkccoind.pid
 ExecStart=/usr/bin/vkccoind -daemon -pid=/var/lib/vkccoind/vkccoind.pid \
           -conf=/etc/vkcoin/vkcoin.conf -datadir=/var/lib/vkccoind
 
-ExecStop=-/usr/bin/vkcoin-cli -conf=/etc/vkcoin/vkcoin.conf \
+ExecStop=-/usr/bin/vkccoin-cli -conf=/etc/vkcoin/vkcoin.conf \
          -datadir=/var/lib/vkccoind stop
 
 Restart=always

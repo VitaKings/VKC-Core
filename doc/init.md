@@ -54,7 +54,7 @@ PID file:            /var/run/vkccoind/vkccoind.pid (OpenRC and Upstart)
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by the vkcoin user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-vkcoin user and group.  Access to vkcoin-cli and other vkccoind rpc clients
+vkcoin user and group.  Access to vkccoin-cli and other vkccoind rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration

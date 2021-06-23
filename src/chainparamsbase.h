@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between vkcoin-cli and vkccoind)
+ * CBaseChainParams defines the base parameters (shared between vkccoin-cli and vkccoind)
  * of a given instance of the vkcoin system.
  */
 class CBaseChainParams

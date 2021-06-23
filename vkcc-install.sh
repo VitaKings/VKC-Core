@@ -170,15 +170,15 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/vkcoin*
-rm -rf vkcoin-cli_ubuntu-16.04-x64.tar.bz2
-wget https://github.com/BlockchainFor/VKC2/releases/download/2.0.4.2/vkcoin-cli_ubuntu-16.04-x64.tar.bz2
-tar -xvf vkcoin-cli_ubuntu-16.04-x64.tar.bz2
-sudo chmod -R 755 vkcoin-cli
+rm -rf vkccoin-cli_ubuntu-16.04-x64.tar.bz2
+wget https://github.com/BlockchainFor/VKC2/releases/download/2.0.4.2/vkccoin-cli_ubuntu-16.04-x64.tar.bz2
+tar -xvf vkccoin-cli_ubuntu-16.04-x64.tar.bz2
+sudo chmod -R 755 vkccoin-cli
 sudo chmod -R 755 vkccoind
 sudo cp -p -r vkccoind /usr/local/bin
-sudo cp -p -r vkcoin-cli /usr/local/bin
+sudo cp -p -r vkccoin-cli /usr/local/bin
 
-  vkcoin-cli stop
+  vkccoin-cli stop
  
  
 
@@ -214,7 +214,7 @@ echo -ne '\n'
 
     #Generate masternode private key
     echo -e "${YELLOW}Generating masternode private key...${NC}"
-    genkey=$(vkcoin-cli masternode genkey)
+    genkey=$(vkccoin-cli masternode genkey)
     if [ -z "$genkey" ]; then
         echo -e "${RED}ERROR: Can not generate masternode private key.${NC} \a"
         echo -e "${RED}ERROR: Reboot VPS and try again or supply existing genkey as a parameter.${NC}"
@@ -222,7 +222,7 @@ echo -ne '\n'
     fi
     
     #Stopping daemon to create vkcoin.conf
-    vkcoin-cli stop
+    vkccoin-cli stop
     sleep .5
 fi
 # Create vkcoin.conf
@@ -307,10 +307,10 @@ echo -e "${NC}-------------------------------------------------
 NOTE: To edit vkcoin.conf, first stop the vkccoind daemon,
 then edit the vkcoin.conf file and save it in nano: (Ctrl-X + Y + Enter),
 then start the vkccoind daemon back up:
-to stop:              ${GREEN}vkcoin-cli stop${NC}
+to stop:              ${GREEN}vkccoin-cli stop${NC}
 to start:             ${GREEN}vkccoind${NC}
 to edit:              ${GREEN}nano ~/.vkcoin/vkcoin.conf${NC}
-to check mn status:   ${GREEN}vkcoin-cli masternode status${NC}
+to check mn status:   ${GREEN}vkccoin-cli masternode status${NC}
 ========================================================================
 To monitor system resource utilization and running processes:
                    ${GREEN}htop${NC}

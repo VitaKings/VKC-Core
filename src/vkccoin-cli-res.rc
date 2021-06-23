@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "VKC"
-            VALUE "FileDescription",    "vkcoin-cli (OSS RPC client for VKC)"
+            VALUE "FileDescription",    "vkccoin-cli (OSS RPC client for VKC)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "vkcoin-cli"
+            VALUE "InternalName",       "vkccoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "vkcoin-cli.exe"
-            VALUE "ProductName",        "vkcoin-cli"
+            VALUE "OriginalFilename",   "vkccoin-cli.exe"
+            VALUE "ProductName",        "vkccoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

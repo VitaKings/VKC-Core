@@ -14,7 +14,7 @@ AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 BITCOIN_DAEMON_NAME=vkccoind
 BITCOIN_GUI_NAME=vkcoin-qt
-BITCOIN_CLI_NAME=vkcoin-cli
+BITCOIN_CLI_NAME=vkccoin-cli
 BITCOIN_TX_NAME=vkcoin-tx
 
 AC_CANONICAL_HOST
@@ -315,7 +315,7 @@ CPPFLAGS="$CPPFLAGS -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build vkcoin-cli vkcoin-tx (default=yes)])],
+  [build vkccoin-cli vkcoin-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -981,7 +981,7 @@ AC_MSG_CHECKING([whether to build vkccoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (vkcoin-cli vkcoin-tx)])
+AC_MSG_CHECKING([whether to build utils (vkccoin-cli vkcoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 

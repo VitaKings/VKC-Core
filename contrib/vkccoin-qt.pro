@@ -398,7 +398,7 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/vkcoin-cli.cpp \
+           src/vkccoin-cli.cpp \
            src/vkcoin-tx.cpp \
            src/vkcoin.cpp \
            src/db.cpp \

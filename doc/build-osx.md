@@ -82,7 +82,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `vkccoind` for your own use.
 
-vkccoind/vkcoin-cli binaries are not included in the vkcoin-qt.app bundle.
+vkccoind/vkccoin-cli binaries are not included in the vkcoin-qt.app bundle.
 
 If you are building `vkccoind` or `vkcoin-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -118,5 +118,5 @@ Other commands:
 -------
 
     ./vkccoind -daemon # to start the vkcoin daemon.
-    ./vkcoin-cli --help  # for a list of command-line options.
-    ./vkcoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./vkccoin-cli --help  # for a list of command-line options.
+    ./vkccoin-cli help    # When the daemon is running, to get a list of RPC commands

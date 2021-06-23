@@ -116,7 +116,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in vkccoind anymore. Use the vkcoin-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in vkccoind anymore. Use the vkccoin-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
