@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The vkcoin Core developers
+// Copyright (c) 2018-2019 The vkccoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -122,7 +122,7 @@ this->setStyleSheet(GUIUtil::loadStyleSheet());
 
 GUIUtil::restoreWindowGeometry("nWindow", QSize(1065, 670), this);
 //this->setFixedSize(1065,670);
-QFontDatabase::addApplicationFont(":/fonts/vkcoin_font");
+QFontDatabase::addApplicationFont(":/fonts/vkccoin_font");
 
 QString windowTitle = tr("VKC") + " - ";
 #ifdef ENABLE_WALLET

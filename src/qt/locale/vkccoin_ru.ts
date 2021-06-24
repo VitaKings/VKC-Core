@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши vkcoin-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши vkccoin-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши vkcoin-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши vkccoin-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Подтвердить шифрование кошелька</translation>
     </message>
     <message>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
-        <translation>vkcoin сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши vkcoin от кражи с использованием вредоносного ПО.</translation>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
+        <translation>vkccoin сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши vkccoin от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ vkcoin&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ vkccoin&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Шифрование</translation>
     </message>
     <message>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите vkcoin адрес, который вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашифрованный секретный ключ.</translation>
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите vkccoin адрес, который вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашифрованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>Адрес vkcoin для подписи сообщения</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>Адрес vkccoin для подписи сообщения</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить владение данным vkcoin адресом</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить владение данным vkccoin адресом</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите `Дешифровать Ключ` чтобы создать секретный ключ. Нажав на `Импортировать Адрес` после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>Адрес vkcoin, которым подписано сообщение</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>Адрес vkccoin, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным vkcoin адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным vkccoin адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a vkcoin address</source>
-        <translation>Отправить монеты на vkcoin адрес</translation>
+        <source>Send coins to a vkccoin address</source>
+        <translation>Отправить монеты на vkccoin адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и vkcoin: URI)</translation>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
+        <translation>Запросить платежи (генерирует QR-код и vkccoin: URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +614,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
-        <translation>&amp;О vkcoin Core</translation>
+        <source>&amp;About vkccoin Core</source>
+        <translation>&amp;О vkccoin Core</translation>
     </message>
     <message>
-        <source>Show information about vkcoin Core</source>
-        <translation>Показать информацию о vkcoin Core</translation>
+        <source>Show information about vkccoin Core</source>
+        <translation>Показать информацию о vkccoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for vkcoin</source>
-        <translation>Изменение параметров конфигурации vkcoin</translation>
+        <source>Modify configuration options for vkccoin</source>
+        <translation>Изменение параметров конфигурации vkccoin</translation>
     </message>
     <message>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими vkcoin адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими vkccoin адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным vkcoin адресом </translation>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным vkccoin адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +662,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a vkcoin: URI or payment request</source>
-        <translation>Открыть vkcoin: URI или запрос платежа</translation>
+        <source>Open a vkccoin: URI or payment request</source>
+        <translation>Открыть vkccoin: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,16 +674,16 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the vkcoin Core help message to get a list with possible vkcoin command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям коммандной строки vkcoin</translation>
+        <source>Show the vkccoin Core help message to get a list with possible vkccoin command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям коммандной строки vkccoin</translation>
     </message>
     <message>
-        <source>vkcoin Core client</source>
-        <translation>Клиент vkcoin Core</translation>
+        <source>vkccoin Core client</source>
+        <translation>Клиент vkccoin Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to vkcoin network</source>
-        <translation><numerusform>%n активное подключение к сети vkcoin</numerusform></translation>
+        <source>%n active connection(s) to vkccoin network</source>
+        <translation><numerusform>%n активное подключение к сети vkccoin</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -829,8 +829,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkcoin.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (vkcoin.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkccoin.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (vkccoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -1130,8 +1130,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid vkcoin address.</source>
-        <translation>Введенный адрес "%1" не является vkcoin адресом.</translation>
+        <source>The entered address "%1" is not a valid vkccoin address.</source>
+        <translation>Введенный адрес "%1" не является vkccoin адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1176,16 +1176,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About vkcoin Core</source>
-        <translation>О vkcoin Core</translation>
+        <source>About vkccoin Core</source>
+        <translation>О vkccoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1231,16 +1231,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to vkcoin Core.</source>
-        <translation>Добро пожаловать в vkcoin Core.</translation>
+        <source>Welcome to vkccoin Core.</source>
+        <translation>Добро пожаловать в vkccoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where vkcoin Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные vkcoin Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where vkccoin Core will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные vkccoin Core.</translation>
     </message>
     <message>
-        <source>vkcoin Core will download and store a copy of the vkcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>vkcoin Core загрузит и сохранит копию цепочки блоков vkcoin. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться файл кошелька.</translation>
+        <source>vkccoin Core will download and store a copy of the vkccoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>vkccoin Core загрузит и сохранит копию цепочки блоков vkccoin. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться файл кошелька.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1251,8 +1251,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1393,12 +1393,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vkcoin addresses after it matures.
-To Add: enter percentage to give and vkcoin address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vkccoin addresses after it matures.
+To Add: enter percentage to give and vkccoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и стэйкинг, после их созревания, на другие vkcoin адреса.
-Для добавления: введите передаваемый процент и vkcoin адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и стэйкинг, после их созревания, на другие vkccoin адреса.
+Для добавления: введите передаваемый процент и vkccoin адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1536,48 +1536,48 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 vkcoin</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 vkcoin</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 vkccoin</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 vkccoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 vkcoin</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 vkcoin</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 vkccoin</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 vkccoin</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 vkcoin to anonymize 10000 vkcoin</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 vkcoin для анонимизации 10000 vkcoin</translation>
+        <source>This option is the quickest and will cost about ~0.025 vkccoin to anonymize 10000 vkccoin</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 vkccoin для анонимизации 10000 vkccoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 vkcoin to anonymize 10000 vkcoin</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 vkcoin для анонимизации 10000 vkcoin</translation>
+        <source>This option is moderately fast and will cost about 0.05 vkccoin to anonymize 10000 vkccoin</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 vkccoin для анонимизации 10000 vkccoin</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 vkcoin per 10000 vkcoin you anonymize.</source>
-        <translation>0.1 vkcoin за 10000 vkcoin которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 vkccoin per 10000 vkccoin you anonymize.</source>
+        <translation>0.1 vkccoin за 10000 vkccoin которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening vkcoin's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки vkcoin.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening vkccoin's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки vkccoin.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening vkcoin's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки vkcoin.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening vkccoin's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки vkccoin.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening vkcoin's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки vkcoin.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening vkccoin's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки vkccoin.</translation>
     </message>
 </context>
 <context>
@@ -1638,8 +1638,8 @@ Please check the address and try again.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the vkcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт vkcoin через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the vkccoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт vkccoin через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1658,12 +1658,12 @@ Please check the address and try again.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start vkcoin after logging in to the system.</source>
-        <translation>Автоматически запускать vkcoin после входа в систему.</translation>
+        <source>Automatically start vkccoin after logging in to the system.</source>
+        <translation>Автоматически запускать vkccoin после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start vkcoin on system login</source>
-        <translation>&amp;Запускать vkcoin при входе в систему</translation>
+        <source>&amp;Start vkccoin on system login</source>
+        <translation>&amp;Запускать vkccoin при входе в систему</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1678,8 +1678,8 @@ Please check the address and try again.</source>
         <translation>При достижении этого значения Перемешивание будет отключено.</translation>
     </message>
     <message>
-        <source>Amount of vkcoin to keep anonymized</source>
-        <translation>Количество vkcoin, держащихся анонимизированными</translation>
+        <source>Amount of vkccoin to keep anonymized</source>
+        <translation>Количество vkccoin, держащихся анонимизированными</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1706,22 +1706,22 @@ Please check the address and try again.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting vkcoin.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска vkcoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting vkccoin.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска vkccoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
+https://www.transifex.com/vkccoin-project/vkccoin-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translation>
+https://www.transifex.com/vkccoin-project/vkccoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the vkcoin network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети vkcoin через SOCKS5 прокси.</translation>
+        <source>Connect to the vkccoin network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети vkccoin через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1875,8 +1875,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Балансы</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vkcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью vkcoin после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vkccoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью vkccoin после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1919,8 +1919,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Баланс Обфускации</translation>
     </message>
     <message>
-        <source>0 vkcoin / 0 Rounds</source>
-        <translation>0 vkcoin / 0 Циклов</translation>
+        <source>0 vkccoin / 0 Rounds</source>
+        <translation>0 vkccoin / 0 Циклов</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2072,12 +2072,12 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start vkcoin: click-to-pay handler</source>
-        <translation>Не удалось запустить vkcoin: обработчик click-to-pay </translation>
+        <source>Cannot start vkccoin: click-to-pay handler</source>
+        <translation>Не удалось запустить vkccoin: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid vkcoin address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный vkcoin адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid vkccoin address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный vkccoin адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2162,8 +2162,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a vkcoin address (e.g. %1)</source>
-        <translation>Введите адрес vkcoin (например %1)</translation>
+        <source>Enter a vkccoin address (e.g. %1)</source>
+        <translation>Введите адрес vkccoin (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2296,8 +2296,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the vkcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки vkcoin. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the vkccoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки vkccoin. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2457,8 +2457,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the vkcoin RPC console.</source>
-        <translation>Добро пожаловать в окружение vkcoin RPC.</translation>
+        <source>Welcome to the vkccoin RPC console.</source>
+        <translation>Добро пожаловать в окружение vkccoin RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2677,8 +2677,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 vkcoin</source>
-        <translation>0 vkcoin</translation>
+        <source>0 vkccoin</source>
+        <translation>0 vkccoin</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2761,8 +2761,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Копировать изменение</translation>
     </message>
     <message>
-        <source>Warning: Invalid vkcoin address</source>
-        <translation>Предупреждение: неправильный vkcoin адрес</translation>
+        <source>Warning: Invalid vkccoin address</source>
+        <translation>Предупреждение: неправильный vkccoin адрес</translation>
     </message>
     <message>
         <source>and SwiftTX</source>
@@ -2815,8 +2815,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>vkcoin Core is shutting down...</source>
-        <translation>vkcoin Core выключается...</translation>
+        <source>vkccoin Core is shutting down...</source>
+        <translation>vkccoin Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2826,8 +2826,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>Адрес vkcoin для подписи сообщения </translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>Адрес vkccoin для подписи сообщения </translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2850,16 +2850,16 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить владение адресом vkcoin</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить владение адресом vkccoin</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>Адрес vkcoin, которым подписано сообщение</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>Адрес vkccoin, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Проверьте сообщение, чтобы убедиться, что оно было подписано указанным vkcoin адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Проверьте сообщение, чтобы убедиться, что оно было подписано указанным vkccoin адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2905,8 +2905,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2925,8 +2925,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Разработчики PIVX Core</translation>
     </message>
     <message>
-        <source>The vkcoin Core developers</source>
-        <translation>Разработчики vkcoin Core</translation>
+        <source>The vkccoin Core developers</source>
+        <translation>Разработчики vkccoin Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3177,7 +3177,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation>Для SwiftTX требуется как минимум 6 подтверждений, Вам нужно подождать несколько минут и попытаться снова.</translation>
@@ -3215,8 +3215,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</translatio
         <translation>Copyright (C) 2015-%i Разработчики PIVX Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The vkcoin Core Developers</source>
-        <translation>Copyright (C) 2017-%i Разработчики vkcoin Core</translation>
+        <source>Copyright (C) 2017-%i The vkccoin Core Developers</source>
+        <translation>Copyright (C) 2017-%i Разработчики vkccoin Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

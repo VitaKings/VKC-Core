@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun vkcoin osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun vkccoin osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun vkcoin osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun vkccoin osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
-        <translation>vkcoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella vkcoinien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
+        <translation>vkccoin sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella vkccoinien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki vkcoinisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki vkccoinisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä vkcoin osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä vkccoin osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän vkcoin osoitteen</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän vkccoin osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>vkcoin osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>vkccoin osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla vkcoin osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla vkccoin osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Ydin</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a vkcoin address</source>
-        <translation>Lähetä kolikkoja vkcoin osoitteeseen</translation>
+        <source>Send coins to a vkccoin address</source>
+        <translation>Lähetä kolikkoja vkccoin osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja vkcoin: URIja)</translation>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja vkccoin: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
-        <translation>vkcoin Core &amp;ytimestä</translation>
+        <source>&amp;About vkccoin Core</source>
+        <translation>vkccoin Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about vkcoin Core</source>
-        <translation>Näytä tietoja vkcoin Ytimestä</translation>
+        <source>Show information about vkccoin Core</source>
+        <translation>Näytä tietoja vkccoin Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for vkcoin</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja vkcoin:lle</translation>
+        <source>Modify configuration options for vkccoin</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja vkccoin:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä vkcoin osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä vkccoin osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a vkcoin: URI or payment request</source>
-        <translation>Avaa vkcoin: URI tai pyydä maksua</translation>
+        <source>Open a vkccoin: URI or payment request</source>
+        <translation>Avaa vkccoin: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the vkcoin Core help message to get a list with possible vkcoin command-line options</source>
-        <translation>Näytä vkcoin Ydin apuviesti saadaksesi lista mahdollisista vkcoin komentolinja komennoista.</translation>
+        <source>Show the vkccoin Core help message to get a list with possible vkccoin command-line options</source>
+        <translation>Näytä vkccoin Ydin apuviesti saadaksesi lista mahdollisista vkccoin komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>vkcoin Core client</source>
-        <translation>vkcoin Ydin asiakasohjelma</translation>
+        <source>vkccoin Core client</source>
+        <translation>vkccoin Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Ydin</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to vkcoin Core.</source>
-        <translation>Tervetuloa vkcoin Ytimeen.</translation>
+        <source>Welcome to vkccoin Core.</source>
+        <translation>Tervetuloa vkccoin Ytimeen.</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Ydin</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 vkcoin</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 vkcoin</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 vkccoin</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 vkccoin</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 vkcoin</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 vkcoin</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 vkccoin</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 vkccoin</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 vkcoin to anonymize 10000 vkcoin</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 vkcoin anonymoidaksesi 10000 vkcoin</translation>
+        <source>This option is the quickest and will cost about ~0.025 vkccoin to anonymize 10000 vkccoin</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 vkccoin anonymoidaksesi 10000 vkccoin</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 vkcoin to anonymize 10000 vkcoin</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 vkcoin anonymoidaksesi 10000 vkcoin</translation>
+        <source>This option is moderately fast and will cost about 0.05 vkccoin to anonymize 10000 vkccoin</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 vkccoin anonymoidaksesi 10000 vkccoin</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 vkcoin per 10000 vkcoin you anonymize.</source>
-        <translation>0.1 per 10000 vkcoin, jotka anonymisoit.</translation>
+        <source>0.1 vkccoin per 10000 vkccoin you anonymize.</source>
+        <translation>0.1 per 10000 vkccoin, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,16 +1209,16 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start vkcoin after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä vkcoin kun kirjaudut sisään.</translation>
+        <source>Automatically start vkccoin after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä vkccoin kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start vkcoin on system login</source>
-        <translation>&amp;Aloita vkcoin järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start vkccoin on system login</source>
+        <translation>&amp;Aloita vkccoin järjestelmän kirjautumisessa</translation>
     </message>
     <message>
-        <source>Amount of vkcoin to keep anonymized</source>
-        <translation>vkcoin määrä joka pidetään anonymisoituna</translation>
+        <source>Amount of vkccoin to keep anonymized</source>
+        <translation>vkccoin määrä joka pidetään anonymisoituna</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1237,12 +1237,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting vkcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting vkccoin.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the vkcoin network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä vkcoin verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the vkccoin network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä vkccoin verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1475,8 +1475,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the vkcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa vkcoin debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the vkccoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa vkccoin debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1587,8 +1587,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the vkcoin RPC console.</source>
-        <translation>Tervetuloa vkcoin RPC konsoliin.</translation>
+        <source>Welcome to the vkccoin RPC console.</source>
+        <translation>Tervetuloa vkccoin RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1630,12 +1630,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the vkcoin network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana vkcoin verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the vkccoin network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana vkccoin verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the vkcoin network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana vkcoin  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the vkccoin network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana vkccoin  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1835,8 +1835,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 vkcoin</source>
-        <translation>0 vkcoin</translation>
+        <source>0 vkccoin</source>
+        <translation>0 vkccoin</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1919,8 +1919,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid vkcoin address</source>
-        <translation>Varoitus: Virheellinen vkcoin osoite</translation>
+        <source>Warning: Invalid vkccoin address</source>
+        <translation>Varoitus: Virheellinen vkccoin osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1966,8 +1966,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The vkcoin address to send the payment to</source>
-        <translation>vkcoin osoite johon maksu lähetetään</translation>
+        <source>The vkccoin address to send the payment to</source>
+        <translation>vkccoin osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2009,8 +2009,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>vkcoin Core is shutting down...</source>
-        <translation>vkcoin core sammuu...</translation>
+        <source>vkccoin Core is shutting down...</source>
+        <translation>vkccoin core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2028,8 +2028,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2060,16 +2060,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän vkcoin osoitteen</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän vkccoin osoitteen</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>vkcoin osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>vkccoin osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla vkcoin osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla vkccoin osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2151,8 +2151,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Ydin</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2167,8 +2167,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The vkcoin Core developers</source>
-        <translation>vkcoin core kehittäjät</translation>
+        <source>The vkccoin Core developers</source>
+        <translation>vkccoin core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2471,7 +2471,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2521,8 +2521,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of vkcoin Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version vkcoin Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of vkccoin Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version vkccoin Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

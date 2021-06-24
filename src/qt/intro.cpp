@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The vkcoin Core developers
+// Copyright (c) 2018-2019 The vkccoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -184,7 +184,7 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the vkcoin.conf file in the default data directory
+     * override -datadir in the vkccoin.conf file in the default data directory
      * (to be consistent with vkccoind behavior)
      */
     if (dataDir != getDefaultDataDirectory())

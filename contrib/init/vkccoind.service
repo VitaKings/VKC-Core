@@ -1,18 +1,18 @@
 [Unit]
-Description=vkcoin's distributed currency daemon
+Description=vkccoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=vkcoin
-Group=vkcoin
+User=vkccoin
+Group=vkccoin
 
 Type=forking
 PIDFile=/var/lib/vkccoind/vkccoind.pid
 
 ExecStart=/usr/bin/vkccoind -daemon -pid=/var/lib/vkccoind/vkccoind.pid \
-          -conf=/etc/vkcoin/vkcoin.conf -datadir=/var/lib/vkccoind
+          -conf=/etc/vkccoin/vkccoin.conf -datadir=/var/lib/vkccoind
 
-ExecStop=-/usr/bin/vkccoin-cli -conf=/etc/vkcoin/vkcoin.conf \
+ExecStop=-/usr/bin/vkccoin-cli -conf=/etc/vkccoin/vkccoin.conf \
          -datadir=/var/lib/vkccoind stop
 
 Restart=always

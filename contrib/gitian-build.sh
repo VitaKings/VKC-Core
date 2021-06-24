@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/vkcoin-core/vkcoin
+url=https://github.com/vkccoin-core/vkccoin
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the vkcoin, gitian-builder, gitian.sigs, and vkcoin-detached-sigs.
+Run this script from the directory containing the vkccoin, gitian-builder, gitian.sigs, and vkccoin-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/vkcoin-core/vkcoin
+-u|--url	Specify the URL of the repository. Default is https://github.com/vkccoin-core/vkccoin
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/vkcoin-core/gitian.sigs.git
-    git clone https://github.com/vkcoin-core/vkcoin-detached-sigs.git
+    git clone https://github.com/vkccoin-core/gitian.sigs.git
+    git clone https://github.com/vkccoin-core/vkccoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./vkcoin
+pushd ./vkccoin
 git fetch
 git checkout ${COMMIT}
 popd
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./vkcoin-binaries/${VERSION}
+	mkdir -p ./vkccoin-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../vkcoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../vkccoin/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkcoin=${COMMIT} --url vkcoin=${url} ../vkcoin/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vkcoin/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/vkcoin-*.tar.gz build/out/src/vkcoin-*.tar.gz ../vkcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkccoin=${COMMIT} --url vkccoin=${url} ../vkccoin/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../vkccoin/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/vkccoin-*.tar.gz build/out/src/vkccoin-*.tar.gz ../vkccoin-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkcoin=${COMMIT} --url vkcoin=${url} ../vkcoin/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../vkcoin/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/vkcoin-*-win-unsigned.tar.gz inputs/vkcoin-win-unsigned.tar.gz
-	    mv build/out/vkcoin-*.zip build/out/vkcoin-*.exe ../vkcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkccoin=${COMMIT} --url vkccoin=${url} ../vkccoin/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../vkccoin/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/vkccoin-*-win-unsigned.tar.gz inputs/vkccoin-win-unsigned.tar.gz
+	    mv build/out/vkccoin-*.zip build/out/vkccoin-*.exe ../vkccoin-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkcoin=${COMMIT} --url vkcoin=${url} ../vkcoin/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../vkcoin/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/vkcoin-*-osx-unsigned.tar.gz inputs/vkcoin-osx-unsigned.tar.gz
-	    mv build/out/vkcoin-*.tar.gz build/out/vkcoin-*.dmg ../vkcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkccoin=${COMMIT} --url vkccoin=${url} ../vkccoin/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../vkccoin/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/vkccoin-*-osx-unsigned.tar.gz inputs/vkccoin-osx-unsigned.tar.gz
+	    mv build/out/vkccoin-*.tar.gz build/out/vkccoin-*.dmg ../vkccoin-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,9 +311,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkcoin=${COMMIT} --url vkcoin=${url} ../vkcoin/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../vkcoin/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/vkcoin-*.tar.gz build/out/src/vkcoin-*.tar.gz ../vkcoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit vkccoin=${COMMIT} --url vkccoin=${url} ../vkccoin/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../vkccoin/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/vkccoin-*.tar.gz build/out/src/vkccoin-*.tar.gz ../vkccoin-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -340,32 +340,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../vkcoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../vkccoin/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../vkcoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../vkccoin/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../vkcoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../vkccoin/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../vkcoin/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../vkccoin/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vkcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vkccoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vkcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../vkccoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -380,10 +380,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../vkcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../vkcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/vkcoin-*win64-setup.exe ../vkcoin-binaries/${VERSION}
-	    mv build/out/vkcoin-*win32-setup.exe ../vkcoin-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../vkccoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../vkccoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/vkccoin-*win64-setup.exe ../vkccoin-binaries/${VERSION}
+	    mv build/out/vkccoin-*win32-setup.exe ../vkccoin-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -391,9 +391,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../vkcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../vkcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/vkcoin-osx-signed.dmg ../vkcoin-binaries/${VERSION}/vkcoin-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../vkccoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../vkccoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/vkccoin-osx-signed.dmg ../vkccoin-binaries/${VERSION}/vkccoin-${VERSION}-osx.dmg
 	fi
 	popd
 

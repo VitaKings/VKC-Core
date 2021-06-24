@@ -10,7 +10,7 @@ import operator
 import os
 import sys
 
-OUT_CPP="qt/vkcoinstrings.cpp"
+OUT_CPP="qt/vkccoinstrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -74,10 +74,10 @@ f.write("""
 #define UNUSED
 #endif
 """)
-f.write('static const char UNUSED *vkcoin_strings[] = {\n')
+f.write('static const char UNUSED *vkccoin_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("vkcoin-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("vkccoin-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

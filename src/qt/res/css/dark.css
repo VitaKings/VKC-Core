@@ -735,7 +735,7 @@
             font-size:55px;
          }
 
-    QWidget .QPushButton#blabel_vkcoin {
+    QWidget .QPushButton#blabel_vkccoin {
             background-color: transparent;
             border:0;
             border-radius:0px;
@@ -769,7 +769,7 @@
      }
 
 
-     QWidget .QFrame#frame_blue .QLabel#label_vkcoin2 { /*vkcoin */
+     QWidget .QFrame#frame_blue .QLabel#label_vkccoin2 { /*vkccoin */
         background-color:transparent;
         color:#EBAB7B;
         font-size:15px;
@@ -787,7 +787,7 @@
         font-size:30px;
      }
 
-     QWidget .QFrame#frame_blue .QLabel#label_vkcoin3 { /*vkcoin */
+     QWidget .QFrame#frame_blue .QLabel#label_vkccoin3 { /*vkccoin */
         background-color:transparent;
         color:#EBAB7B;
         font-size:15px;
@@ -807,7 +807,7 @@
      }
 
 
-     QWidget .QFrame#frame_blue .QLabel#label_vkcoin4 { /*vkcoin */
+     QWidget .QFrame#frame_blue .QLabel#label_vkccoin4 { /*vkccoin */
         background-color:transparent;
         color:#EBAB7B;
         font-size:15px;
@@ -818,7 +818,7 @@
 
     QWidget .QFrame#frame_blue_3 { /* logo */
 
-        background-image: url(':/images_dark/vkcoin_logo_horizontal');
+        background-image: url(':/images_dark/vkccoin_logo_horizontal');
         background-repeat:none;
         background-position: top-right;
         border-style: none;
@@ -2252,7 +2252,7 @@
     border:0;
     }
 
-    /* About vkcoin Dialog */
+    /* About vkccoin Dialog */
     QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Bulwark Contents */
     margin-left:10px;
     }

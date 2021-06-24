@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите vkcoin адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите vkccoin адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите vkcoin адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите vkccoin адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
-        <translation>vkcoin сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия vkcoin от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
+        <translation>vkccoin сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия vkccoin от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да криптирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако криптирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ vkcoin&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако криптирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ vkccoin&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,16 +231,16 @@
         <translation>&amp;BIP 38 криптиране</translation>
     </message>
     <message>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете vkcoin адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания частен ключ.</translation>
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете vkccoin адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания частен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin адреса, с който да подпишете съобщението</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този vkcoin адрес</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този vkccoin адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -432,8 +432,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin адреса, с който да подпишете съобщението</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -456,8 +456,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този vkcoin адрес</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този vkccoin адрес</translation>
     </message>
     </context>
 <context>
@@ -519,6 +519,6 @@
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     </context>
 </TS>

@@ -1,6 +1,6 @@
-usr/local/bin/vkcoin-qt usr/bin
+usr/local/bin/vkccoin-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/vkcoin-qt.desktop usr/share/applications
-debian/vkcoin-qt.protocol usr/share/kde4/services/
+debian/vkccoin-qt.desktop usr/share/applications
+debian/vkccoin-qt.protocol usr/share/kde4/services/

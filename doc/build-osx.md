@@ -57,7 +57,7 @@ Instructions: Homebrew
 
         make install
 
-5.  (Optional) You can also build dmg image for vkcoin-qt:
+5.  (Optional) You can also build dmg image for vkccoin-qt:
 
         make deploy
 
@@ -70,7 +70,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "vkcoin-qt" as project name, enter src/qt as location
+4. Enter "vkccoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -82,9 +82,9 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `vkccoind` for your own use.
 
-vkccoind/vkccoin-cli binaries are not included in the vkcoin-qt.app bundle.
+vkccoind/vkccoin-cli binaries are not included in the vkccoin-qt.app bundle.
 
-If you are building `vkccoind` or `vkcoin-qt` for others, your build machine should be set up
+If you are building `vkccoind` or `vkccoin-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -93,7 +93,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the vkcoin-qt.app
+Once dependencies are compiled, see release-process.md for how the vkccoin-qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
@@ -105,18 +105,18 @@ directory. We have to first create the RPC configuration file, though.
 Run `./vkccoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=vkcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/vkcoin/vkcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/vkcoin/vkcoin.conf"
+    echo -e "rpcuser=vkccoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/vkccoin/vkccoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/vkccoin/vkccoin.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/vkcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/vkccoin/debug.log
 
 Other commands:
 -------
 
-    ./vkccoind -daemon # to start the vkcoin daemon.
+    ./vkccoind -daemon # to start the vkccoin daemon.
     ./vkccoin-cli --help  # for a list of command-line options.
     ./vkccoin-cli help    # When the daemon is running, to get a list of RPC commands

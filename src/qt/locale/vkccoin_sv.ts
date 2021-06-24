@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina vkcoin adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina vkccoin adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina vkcoin adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina vkccoin adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,16 +160,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
-        <translation>vkcoin kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina vkcoins från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
+        <translation>vkccoin kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina vkccoins från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA vkcoin&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA vkccoin&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en vkcoin adress som du vill kryptera med BIP 38.
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en vkccoin adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin adressen för signera meddelandet med</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna vkcoin adress</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna vkccoin adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>vkcoin adressen meddelandet blev signerat med</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>vkccoin adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vkcoin adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vkccoin adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,16 +583,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Kärna</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a vkcoin address</source>
-        <translation>Skicka mynt till en vkcoin adress</translation>
+        <source>Send coins to a vkccoin address</source>
+        <translation>Skicka mynt till en vkccoin adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och vkcoin: URls)</translation>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och vkccoin: URls)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -603,24 +603,24 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
-        <translation>Om vkcoin Kärnan</translation>
+        <source>&amp;About vkccoin Core</source>
+        <translation>Om vkccoin Kärnan</translation>
     </message>
     <message>
-        <source>Show information about vkcoin Core</source>
-        <translation>Visa information om vkcoin Kärnan</translation>
+        <source>Show information about vkccoin Core</source>
+        <translation>Visa information om vkccoin Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for vkcoin</source>
-        <translation>Ändra konfigurationsval för vkcoin</translation>
+        <source>Modify configuration options for vkccoin</source>
+        <translation>Ändra konfigurationsval för vkccoin</translation>
     </message>
     <message>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
-        <translation>Signera meddelanden med din vkcoin adress för att visa att du äger dem</translation>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
+        <translation>Signera meddelanden med din vkccoin adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vkcoin adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vkccoin adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>vkcoin Core client</source>
-        <translation>vkcoin kärn klient</translation>
+        <source>vkccoin Core client</source>
+        <translation>vkccoin kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -841,15 +841,15 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Kärna</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Kärna</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1106,8 +1106,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin adressen för signera meddelandet med</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1130,16 +1130,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna vkcoin adress</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna vkccoin adress</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>vkcoin adressen meddelandet blev signerat med</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>vkccoin adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vkcoin adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika vkccoin adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1181,8 +1181,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Kärna</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Kärna</translation>
     </message>
     </context>
 <context>
@@ -1365,7 +1365,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>Error</source>
         <translation>Fel</translation>

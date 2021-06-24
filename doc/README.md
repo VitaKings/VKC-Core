@@ -3,26 +3,26 @@ VKC project
 
 Setup
 ---------------------
-[VKC project](http://esbproject.online/) is the original vkcoin client and it builds the backbone of the network. However, it downloads and stores the entire history of vkcoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[VKC project](http://esbproject.online/) is the original vkccoin client and it builds the backbone of the network. However, it downloads and stores the entire history of vkccoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run vkcoin on your native platform.
+The following are some helpful notes on how to run vkccoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/vkcoin-qt (GUI, 32-bit) or bin/32/vkccoind (headless, 32-bit)
-- bin/64/vkcoin-qt (GUI, 64-bit) or bin/64/vkccoind (headless, 64-bit)
+- bin/32/vkccoin-qt (GUI, 32-bit) or bin/32/vkccoind (headless, 32-bit)
+- bin/64/vkccoin-qt (GUI, 64-bit) or bin/64/vkccoind (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run vkcoin-qt.exe.
+Unpack the files into a directory, and then run vkccoin-qt.exe.
 
 ### OSX
 
-Drag vkcoin-Qt to your applications folder, and then run vkcoin-Qt.
+Drag vkccoin-Qt to your applications folder, and then run vkccoin-Qt.
 
 ### Need Help?
 
@@ -31,7 +31,7 @@ Drag vkcoin-Qt to your applications folder, and then run vkcoin-Qt.
 
 Building
 ---------------------
-The following are developer notes on how to build vkcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build vkccoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -40,7 +40,7 @@ The following are developer notes on how to build vkcoin on your native platform
 
 Development
 ---------------------
-The vkcoin repo's [root README](https://github.com/vkcoin-Core/vkcoin/blob/master/README.md) contains relevant information on the development process and automated testing.
+The vkccoin repo's [root README](https://github.com/vkccoin-Core/vkccoin/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

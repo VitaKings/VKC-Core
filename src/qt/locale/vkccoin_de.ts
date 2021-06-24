@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie vkcoin überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie vkccoin überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie vkcoin empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie vkccoin empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre vkcoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie vkcoin überweisen.</translation>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre vkccoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie vkccoin überweisen.</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre vkcoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre vkccoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer vkcoins durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer vkccoins durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre vkcoins verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre vkccoins verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine vkcoin Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine vkccoin Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese vkcoin Adresse besitzt</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese vkccoin Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>Die vkcoin Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>Die vkccoin Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen vkcoin-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen vkccoin-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a vkcoin address</source>
-        <translation>An eine vkcoin-Adresse überweisen</translation>
+        <source>Send coins to a vkccoin address</source>
+        <translation>An eine vkccoin-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und vkcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und vkccoin: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -622,24 +622,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
-        <translation>Über.vkcoin Core</translation>
+        <source>&amp;About vkccoin Core</source>
+        <translation>Über.vkccoin Core</translation>
     </message>
     <message>
-        <source>Show information about vkcoin Core</source>
-        <translation>Zeigt Informationen über vkcoin Core</translation>
+        <source>Show information about vkccoin Core</source>
+        <translation>Zeigt Informationen über vkccoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for vkcoin</source>
-        <translation>Konfiguration von vkcoin verändern</translation>
+        <source>Modify configuration options for vkccoin</source>
+        <translation>Konfiguration von vkccoin verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer vkcoin-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer vkccoin-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten vkcoin-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten vkccoin-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a vkcoin: URI or payment request</source>
-        <translation>Öffne eine vkcoin: URI or Zahlungsanfrage</translation>
+        <source>Open a vkccoin: URI or payment request</source>
+        <translation>Öffne eine vkccoin: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the vkcoin Core help message to get a list with possible vkcoin command-line options</source>
-        <translation>Zeige die vkcoin-Core Hilfe, um mögliche vkcoin Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the vkccoin Core help message to get a list with possible vkccoin command-line options</source>
+        <translation>Zeige die vkccoin-Core Hilfe, um mögliche vkccoin Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>vkcoin Core client</source>
-        <translation>vkcoin Core Client</translation>
+        <source>vkccoin Core client</source>
+        <translation>vkccoin Core Client</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -812,8 +812,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkcoin.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "vkcoin.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkccoin.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "vkccoin.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1113,8 +1113,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid vkcoin address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige vkcoin-Adresse.</translation>
+        <source>The entered address "%1" is not a valid vkccoin address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige vkccoin-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1159,16 +1159,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About vkcoin Core</source>
-        <translation>Über vkcoin Core</translation>
+        <source>About vkccoin Core</source>
+        <translation>Über vkccoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1214,16 +1214,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to vkcoin Core.</source>
-        <translation>Willkommen zu vkcoin Core.</translation>
+        <source>Welcome to vkccoin Core.</source>
+        <translation>Willkommen zu vkccoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where vkcoin Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie vkcoin Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where vkccoin Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie vkccoin Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>vkcoin Core will download and store a copy of the vkcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>vkcoin Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>vkccoin Core will download and store a copy of the vkccoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>vkccoin Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1234,8 +1234,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1372,12 +1372,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vkcoin addresses after it matures.
-To Add: enter percentage to give and vkcoin address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vkccoin addresses after it matures.
+To Add: enter percentage to give and vkccoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen vkcoin-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die vkcoin-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen vkccoin-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die vkccoin-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1572,8 +1572,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Verschleierter Betrag:</translation>
     </message>
     <message>
-        <source>0 vkcoin / 0 Rounds</source>
-        <translation>0 vkcoin/ 0 Runden</translation>
+        <source>0 vkccoin / 0 Rounds</source>
+        <translation>0 vkccoin/ 0 Runden</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -1705,8 +1705,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a vkcoin address (e.g. %1)</source>
-        <translation>vkcoin-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a vkccoin address (e.g. %1)</source>
+        <translation>vkccoin-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1892,7 +1892,7 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>vkcoins überweisen</translation>
+        <translation>vkccoins überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1967,8 +1967,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 vkcoin</source>
-        <translation>0 vkcoin</translation>
+        <source>0 vkccoin</source>
+        <translation>0 vkccoin</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2106,8 +2106,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The vkcoin address to send the payment to</source>
-        <translation>vkcoin-Adresse, an die überwiesen werden soll</translation>
+        <source>The vkccoin address to send the payment to</source>
+        <translation>vkccoin-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2146,8 +2146,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the vkcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the vkcoin network.</source>
-        <translation>Eine an die vkcoin-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das vkcoin-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the vkccoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the vkccoin network.</source>
+        <translation>Eine an die vkccoin-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das vkccoin-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2173,8 +2173,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>vkcoin Core is shutting down...</source>
-        <translation>vkcoin Core wird beendet...</translation>
+        <source>vkccoin Core is shutting down...</source>
+        <translation>vkccoin Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2188,8 +2188,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>vkcoin Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>vkccoin Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2216,16 +2216,16 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese vkcoin Adresse besitzt</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese vkccoin Adresse besitzt</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>Die vkcoin Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>Die vkccoin Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen vkcoin-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen vkccoin-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2263,8 +2263,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2279,8 +2279,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The vkcoin Core developers</source>
-        <translation>Die vkcoin Core Entwickler</translation>
+        <source>The vkccoin Core developers</source>
+        <translation>Die vkccoin Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2438,7 +2438,7 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte vkcoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine DNAs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte vkccoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine DNAs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2800,11 +2800,11 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>vkcoins überweisen</translation>
+        <translation>vkccoins überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 vkcoin.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 vkcoin begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 vkccoin.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 vkccoin begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -2847,7 +2847,7 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
     </message>
 </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>Error</source>
         <translation>Fehler</translation>
@@ -2997,8 +2997,8 @@ MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translati
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart vkcoin Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte vkcoin Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart vkccoin Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte vkccoin Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

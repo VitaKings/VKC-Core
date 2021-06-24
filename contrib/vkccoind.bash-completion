@@ -6,7 +6,7 @@
 have vkccoind && {
 
 # call $vkccoind for RPC
-_vkcoin_rpc() {
+_vkccoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -19,10 +19,10 @@ _vkcoin_rpc() {
     $vkccoind "${rpcargs[@]}" "$@"
 }
 
-# Add vkcoin accounts to COMPREPLY
-_vkcoin_accounts() {
+# Add vkccoin accounts to COMPREPLY
+_vkccoin_accounts() {
     local accounts
-    accounts=$(_vkcoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_vkccoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
@@ -53,7 +53,7 @@ _vkccoind() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _vkcoin_accounts
+                _vkccoin_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _vkccoind() {
                 return 0
                 ;;
             move|setaccount)
-                _vkcoin_accounts
+                _vkccoin_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _vkccoind() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _vkcoin_accounts
+            _vkccoin_accounts
             return 0
             ;;
     esac
@@ -119,7 +119,7 @@ _vkccoind() {
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_vkcoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_vkccoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )

@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between vkccoin-cli and vkccoind)
- * of a given instance of the vkcoin system.
+ * of a given instance of the vkccoin system.
  */
 class CBaseChainParams
 {

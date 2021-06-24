@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The vkcoin Core developers
+// Copyright (c) 2018-2019 The vkccoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -228,7 +228,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
 
-    // vkcoin labels
+    // vkccoin labels
 
     if(balance != 0)
         ui->labelBalance->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, currentBalance, false, BitcoinUnits::separatorNever));
@@ -247,7 +247,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
-//    ui->label_vkcoin4->setVisible(showImmature || showWatchOnlyImmature);
+//    ui->label_vkccoin4->setVisible(showImmature || showWatchOnlyImmature);
 
    // ui->labelWatchImmature->setVisible(showWatchOnlyImmature); // show watch-only immature balance
 
@@ -314,12 +314,12 @@ void OverviewPage::setWalletModel(WalletModel* model)
         // connect(ui->obfuscationReset, SIGNAL(clicked()), this, SLOT(obfuscationReset()));
         // connect(ui->toggleObfuscation, SIGNAL(clicked()), this, SLOT(toggleObfuscation()));
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
-        connect(ui->blabel_vkcoin, SIGNAL(clicked()), this, SLOT(openMyAddresses()));
+        connect(ui->blabel_vkccoin, SIGNAL(clicked()), this, SLOT(openMyAddresses()));
 
         emit model->makeBalance();
     }
 
-    // update the display unit, to not use the default ("vkcoin")
+    // update the display unit, to not use the default ("vkccoin")
     updateDisplayUnit();
 }
 
@@ -435,7 +435,7 @@ void OverviewPage::updateBlockChainInfo()
         int CurrentBlock = clientModel->getNumBlocks();
         int64_t netHashRate = chainActive.GetNetworkHashPS(24, CurrentBlock-1);
         double BlockReward = GetBlockValue(CurrentBlock);
-        double BlockRewardvkcoin =  static_cast<double>(BlockReward/COIN);
+        double BlockRewardvkccoin =  static_cast<double>(BlockReward/COIN);
         double CurrentDiff = GetDifficulty();
 
         ui->label_CurrentBlock_value->setText(QString::number(CurrentBlock));
@@ -443,7 +443,7 @@ void OverviewPage::updateBlockChainInfo()
         ui->label_Nethash->setText(tr("Difficulty:"));
         ui->label_Nethash_value->setText(QString::number(CurrentDiff,'f',4));
 
-        ui->label_CurrentBlockReward_value->setText(QString::number(BlockRewardvkcoin, 'f', 1).append(" | ") + QString::number(GetSporkValue(SPORK_11_DEV_FEE)).append("%"));
+        ui->label_CurrentBlockReward_value->setText(QString::number(BlockRewardvkccoin, 'f', 1).append(" | ") + QString::number(GetSporkValue(SPORK_11_DEV_FEE)).append("%"));
 
         ui->label_Supply_value->setText(QString::number(chainActive.Tip()->nMoneySupply / COIN).append(" VKC"));
 

@@ -1,6 +1,6 @@
 [Protocol]
-exec=vkcoin-qt '%u'
-protocol=vkcoin
+exec=vkccoin-qt '%u'
+protocol=vkccoin
 input=none
 output=none
 helper=true

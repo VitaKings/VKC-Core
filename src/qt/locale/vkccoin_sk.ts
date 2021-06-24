@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše vkcoin adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše vkccoin adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše vkcoin adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše vkccoin adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
-        <translation>vkcoin sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše vkcoin pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
+        <translation>vkccoin sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše vkccoin pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY vkcoin &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY vkccoin &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu vkcoin, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu vkccoin, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>Adresa vkcoin, ktorou chcete správu podpísať</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>Adresa vkccoin, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto vkcoin adresy</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto vkccoin adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>vkcoin adresa, ktorou bola správa podpísaná</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>vkccoin adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou vkcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou vkccoin adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a vkcoin address</source>
-        <translation>Odoslať mince na adresu vkcoin</translation>
+        <source>Send coins to a vkccoin address</source>
+        <translation>Odoslať mince na adresu vkccoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a vkcoin: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a vkccoin: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
-        <translation>O vkcoin Core</translation>
+        <source>&amp;About vkccoin Core</source>
+        <translation>O vkccoin Core</translation>
     </message>
     <message>
-        <source>Show information about vkcoin Core</source>
-        <translation>Zobraziť informácie o vkcoin Core</translation>
+        <source>Show information about vkccoin Core</source>
+        <translation>Zobraziť informácie o vkccoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for vkcoin</source>
-        <translation>Zmeňte možnosti konfigurácie pre vkcoin</translation>
+        <source>Modify configuration options for vkccoin</source>
+        <translation>Zmeňte možnosti konfigurácie pre vkccoin</translation>
     </message>
     <message>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy vkcoin, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy vkccoin, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými vkcoin adresami</translation>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými vkccoin adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a vkcoin: URI or payment request</source>
-        <translation>Otvorte vkcoin: URI alebo žiadosť o platbu</translation>
+        <source>Open a vkccoin: URI or payment request</source>
+        <translation>Otvorte vkccoin: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the vkcoin Core help message to get a list with possible vkcoin command-line options</source>
-        <translation>Zobraziť pomocnú správu programu vkcoin Core a získajte zoznam možností príkazového riadka vkcoin</translation>
+        <source>Show the vkccoin Core help message to get a list with possible vkccoin command-line options</source>
+        <translation>Zobraziť pomocnú správu programu vkccoin Core a získajte zoznam možností príkazového riadka vkccoin</translation>
     </message>
     <message>
-        <source>vkcoin Core client</source>
-        <translation>vkcoin Core klient</translation>
+        <source>vkccoin Core client</source>
+        <translation>vkccoin Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkcoin.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (vkcoin.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkccoin.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (vkccoin.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -908,15 +908,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1093,8 +1093,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The vkcoin address to sign the message with</source>
-        <translation>Adresa vkcoin, ktorou chcete správu podpísať</translation>
+        <source>The vkccoin address to sign the message with</source>
+        <translation>Adresa vkccoin, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1117,16 +1117,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto vkcoin adresy</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto vkccoin adresy</translation>
     </message>
     <message>
-        <source>The vkcoin address the message was signed with</source>
-        <translation>vkcoin adresa, ktorou bola správa podpísaná</translation>
+        <source>The vkccoin address the message was signed with</source>
+        <translation>vkccoin adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou vkcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou vkccoin adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1164,8 +1164,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     </context>
 <context>
@@ -1260,7 +1260,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

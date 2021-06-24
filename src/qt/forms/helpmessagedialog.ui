@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../vkcoin.qrc">:/images/about</pixmap>
+      <pixmap resource="../vkccoin.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../vkcoin.qrc"/>
+  <include location="../vkccoin.qrc"/>
  </resources>
  <connections>
   <connection>

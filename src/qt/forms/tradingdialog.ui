@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="vkcoinSupply">
+    <widget class="QLabel" name="vkccoinSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="Buyvkcoin">
+    <widget class="QPushButton" name="Buyvkccoin">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -445,7 +445,7 @@
       <string>Buy VKC coin</string>
      </property>
      <property name="icon">
-      <iconset resource="../vkcoin.qrc">
+      <iconset resource="../vkccoin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1707,7 +1707,7 @@
       <string>VKC</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputvkcoin">
+    <widget class="QLineEdit" name="UnitsInputvkccoin">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellvkcoinBTN">
+    <widget class="QPushButton" name="SellvkccoinBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1754,7 +1754,7 @@
       <string>Sell VKC coin</string>
      </property>
      <property name="icon">
-      <iconset resource="../vkcoin">
+      <iconset resource="../vkccoin">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1782,7 +1782,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="vkcoinAvailableLabel">
+       <widget class="QLabel" name="vkccoinAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelvkcoin">
+       <widget class="QLabel" name="labelvkccoin">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="vkcoinBalanceLabel">
+    <widget class="QLabel" name="vkccoinBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="vkcoinAvailableLabel_2">
+    <widget class="QLabel" name="vkccoinAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>VKC Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="vkcoinPendingLabel">
+    <widget class="QLabel" name="vkccoinPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2944,7 +2944,7 @@
       <string>Generate VKC Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../vkcoin.qrc">
+      <iconset resource="../vkccoin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../vkcoin.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../vkccoin.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../vkcoin.qrc">
+      <iconset resource="../vkccoin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../vkcoin.qrc"/>
+  <include location="../vkccoin.qrc"/>
  </resources>
  <connections/>
 </ui>

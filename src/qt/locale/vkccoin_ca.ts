@@ -164,8 +164,8 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES vkcoinS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES vkccoinS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
-        <translation>&amp;Sobre vkcoin Core</translation>
+        <source>&amp;About vkccoin Core</source>
+        <translation>&amp;Sobre vkccoin Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
-        <source>About vkcoin Core</source>
-        <translation>Sobre vkcoin Core</translation>
+        <source>About vkccoin Core</source>
+        <translation>Sobre vkccoin Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to vkcoin Core.</source>
-        <translation>Benvingut a vkcoin Core.</translation>
+        <source>Welcome to vkccoin Core.</source>
+        <translation>Benvingut a vkccoin Core.</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1132,8 +1132,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>vkcoin Core</translation>
+        <source>vkccoin Core</source>
+        <translation>vkccoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1292,7 +1292,7 @@
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

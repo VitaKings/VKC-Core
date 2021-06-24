@@ -1,4 +1,4 @@
-Source: vkcoin
+Source: vkccoin
 Section: utils
 Priority: optional
 Build-Depends: debhelper,
@@ -40,7 +40,7 @@ Description: peer-to-peer network based digital currency - daemon
  This package provides the daemon, vkccoind, and the CLI tool
  vkccoin-cli to interact with the daemon.
 
-Package: vkcoin-qt
+Package: vkccoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -53,4 +53,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides vkcoin-qt, a GUI for VKC wallet based on Qt.
+ This package provides vkccoin-qt, a GUI for VKC wallet based on Qt.

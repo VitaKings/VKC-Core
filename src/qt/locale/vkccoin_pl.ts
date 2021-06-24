@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE vkcoin!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE vkccoin!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres vkcoin jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres vkccoin jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>&amp;Rdzeń vkcoin</translation>
+        <source>vkccoin Core</source>
+        <translation>&amp;Rdzeń vkccoin</translation>
     </message>
     <message>
-        <source>Send coins to a vkcoin address</source>
-        <translation>Wyślij monety do adresu vkcoin</translation>
+        <source>Send coins to a vkccoin address</source>
+        <translation>Wyślij monety do adresu vkccoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i vkcoin:URI)</translation>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i vkccoin:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About vkcoin Core</source>
+        <source>&amp;About vkccoin Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about vkcoin Core</source>
+        <source>Show information about vkccoin Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for vkcoin</source>
-        <translation>Modyfikuj opcje konfiguracji vkcoin</translation>
+        <source>Modify configuration options for vkccoin</source>
+        <translation>Modyfikuj opcje konfiguracji vkccoin</translation>
     </message>
     <message>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami vkcoin, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami vkccoin, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu vkcoin</translation>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu vkccoin</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a vkcoin: URI or payment request</source>
-        <translation>Otwórz vkcoin: URI i żądanie zapłaty</translation>
+        <source>Open a vkccoin: URI or payment request</source>
+        <translation>Otwórz vkccoin: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the vkcoin Core help message to get a list with possible vkcoin command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia vkcoin, aby dostać listę możliwych opcji vkcoin command-line</translation>
+        <source>Show the vkccoin Core help message to get a list with possible vkccoin command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia vkccoin, aby dostać listę możliwych opcji vkccoin command-line</translation>
     </message>
     <message>
-        <source>vkcoin Core client</source>
-        <translation>Rdzeń vkcoin klient</translation>
+        <source>vkccoin Core client</source>
+        <translation>Rdzeń vkccoin klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -916,8 +916,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>&amp;Rdzeń vkcoin</translation>
+        <source>vkccoin Core</source>
+        <translation>&amp;Rdzeń vkccoin</translation>
     </message>
     </context>
 <context>
@@ -931,8 +931,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>vkcoin Core</source>
-        <translation>&amp;Rdzeń vkcoin</translation>
+        <source>vkccoin Core</source>
+        <translation>&amp;Rdzeń vkccoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1192,16 +1192,16 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start vkcoin after logging in to the system.</source>
-        <translation>Automatycznie uruchom vkcoin po zalogowaniu do systemu</translation>
+        <source>Automatically start vkccoin after logging in to the system.</source>
+        <translation>Automatycznie uruchom vkccoin po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start vkcoin on system login</source>
-        <translation>&amp;Uruchom vkcoin podczas logowania do systemu</translation>
+        <source>&amp;Start vkccoin on system login</source>
+        <translation>&amp;Uruchom vkccoin podczas logowania do systemu</translation>
     </message>
     <message>
-        <source>Amount of vkcoin to keep anonymized</source>
-        <translation>Liczba vkcoin do anonimizacji</translation>
+        <source>Amount of vkccoin to keep anonymized</source>
+        <translation>Liczba vkccoin do anonimizacji</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1220,18 +1220,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting vkcoin.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie vkcoin</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting vkccoin.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie vkccoin</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
+https://www.transifex.com/vkccoin-project/vkccoin-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/vkcoin-project/vkcoin-project-translations </translation>
+https://www.transifex.com/vkccoin-project/vkccoin-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the vkcoin network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią vkcoin poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the vkccoin network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią vkccoin poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1373,8 +1373,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations </translati
         <translation>Status:</translation>
     </message>
     <message>
-        <source>0 vkcoin / 0 Rounds</source>
-        <translation>0 vkcoin / 0 Rund</translation>
+        <source>0 vkccoin / 0 Rounds</source>
+        <translation>0 vkccoin / 0 Rund</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -1458,8 +1458,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations </translati
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a vkcoin address (e.g. %1)</source>
-        <translation>Wprowadź adres vkcoin (np. %1)</translation>
+        <source>Enter a vkccoin address (e.g. %1)</source>
+        <translation>Wprowadź adres vkccoin (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1897,8 +1897,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations </translati
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this vkcoin address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres vkcoin jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this vkccoin address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres vkccoin jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1932,8 +1932,8 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations </translati
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>vkcoin Core</source>
-        <translation>&amp;Rdzeń vkcoin</translation>
+        <source>vkccoin Core</source>
+        <translation>&amp;Rdzeń vkccoin</translation>
     </message>
     </context>
 <context>
@@ -2024,7 +2024,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations </translati
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

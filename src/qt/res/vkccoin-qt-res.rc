@@ -1,6 +1,6 @@
-IDI_ICON1 ICON DISCARDABLE "dblue/icons/vkcoin.ico"
-IDI_ICON2 ICON DISCARDABLE "dark/icons/vkcoin.ico"
-IDI_ICON3 ICON DISCARDABLE "icons/vkcoin.ico"
+IDI_ICON1 ICON DISCARDABLE "dblue/icons/vkccoin.ico"
+IDI_ICON2 ICON DISCARDABLE "dark/icons/vkccoin.ico"
+IDI_ICON3 ICON DISCARDABLE "icons/vkccoin.ico"
 
 #include <windows.h>             // needed for VERSIONINFO
 #include "../../clientversion.h" // holds the needed client version information
@@ -23,10 +23,10 @@ BEGIN
             VALUE "CompanyName",        "VKC"
             VALUE "FileDescription",    "VKC (OSS GUI client)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "vkcoin-qt"
+            VALUE "InternalName",       "vkccoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "vkcoin-qt.exe"
+            VALUE "OriginalFilename",   "vkccoin-qt.exe"
             VALUE "ProductName",        "VKC wallet"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

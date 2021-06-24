@@ -245,7 +245,7 @@
                 </spacer>
                </item>
                <item>
-                <widget class="QPushButton" name="blabel_vkcoin">
+                <widget class="QPushButton" name="blabel_vkccoin">
                  <property name="font">
                   <font>
                    <pointsize>20</pointsize>

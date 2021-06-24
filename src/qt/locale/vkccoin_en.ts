@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your vkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your vkccoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your vkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your vkccoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>vkcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkcoins from being stolen by malware infecting your computer.</source>
+        <source>vkccoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your vkccoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkcoin&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR vkccoin&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a vkcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a vkccoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The vkcoin address to sign the message with</source>
+        <source>The vkccoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this vkcoin address</source>
+        <source>Sign the message to prove you own this vkccoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The vkcoin address the message was signed with</source>
+        <source>The vkccoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -776,12 +776,12 @@
     </message>
     <message>
         <location line="-652"/>
-        <source>Send coins to a vkcoin address</source>
+        <source>Send coins to a vkccoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and vkcoin: URIs)</source>
+        <source>Request payments (generates QR codes and vkccoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -806,17 +806,17 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for vkcoin</source>
+        <source>Modify configuration options for vkccoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your vkcoin addresses to prove you own them</source>
+        <source>Sign messages with your vkccoin addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified vkcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified vkccoin addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Open a vkcoin: URI or payment request</source>
+        <source>Open a vkccoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,7 +871,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the e-Sport Betting Coin help message to get a list with possible vkcoin command-line options</source>
+        <source>Show the e-Sport Betting Coin help message to get a list with possible vkccoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -881,7 +881,7 @@
     </message>
     <message numerus="yes">
         <location line="+190"/>
-        <source>%n active connection(s) to vkcoin network</source>
+        <source>%n active connection(s) to vkccoin network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1077,7 +1077,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+473"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkcoin.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (vkccoin.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1456,7 +1456,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid vkcoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid vkccoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1586,12 +1586,12 @@ Address: %4
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where vkcoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where vkccoin Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>vkcoin Core will download and store a copy of the vkcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>vkccoin Core will download and store a copy of the vkccoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1606,7 +1606,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>vkcoin Core</source>
+        <source>vkccoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1782,8 +1782,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vkcoin addresses after it matures.
-To Add: enter percentage to give and vkcoin address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other vkccoin addresses after it matures.
+To Add: enter percentage to give and vkccoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -1948,12 +1948,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 vkcoin</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 vkccoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 vkcoin</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 vkccoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1963,12 +1963,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 vkcoin to anonymize 10000 vkcoin</source>
+        <source>This option is the quickest and will cost about ~0.025 vkccoin to anonymize 10000 vkccoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 vkcoin to anonymize 10000 vkcoin</source>
+        <source>This option is moderately fast and will cost about 0.05 vkccoin to anonymize 10000 vkccoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1978,7 +1978,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 vkcoin per 10000 vkcoin you anonymize.</source>
+        <source>0.1 vkccoin per 10000 vkccoin you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,17 +1990,17 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening vkcoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening vkccoin&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening vkcoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening vkccoin&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening vkcoin&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening vkccoin&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2076,7 +2076,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the vkcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the vkccoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2101,12 +2101,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-179"/>
-        <source>Automatically start vkcoin after logging in to the system.</source>
+        <source>Automatically start vkccoin after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start vkcoin on system login</source>
+        <source>&amp;Start vkccoin on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2126,7 +2126,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Amount of vkcoin to keep anonymized</source>
+        <source>Amount of vkccoin to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2161,13 +2161,13 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting vkcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting vkccoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
+https://www.transifex.com/vkccoin-project/vkccoin-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2177,7 +2177,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the vkcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the vkccoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2374,7 +2374,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vkcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the vkccoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2429,7 +2429,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>0 vkcoin / 0 Rounds</source>
+        <source>0 vkccoin / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2661,12 +2661,12 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start vkcoin: click-to-pay handler</source>
+        <source>Cannot start vkccoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid vkcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid vkccoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a vkcoin address (e.g. %1)</source>
+        <source>Enter a vkccoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2969,7 +2969,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the vkcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the vkccoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3181,7 +3181,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the vkcoin RPC console.</source>
+        <source>Welcome to the vkccoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3272,12 +3272,12 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the vkcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the vkccoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the vkcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the vkccoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3570,7 +3570,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 vkcoin</source>
+        <source>0 vkccoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3630,18 +3630,18 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="-165"/>
-        <source>If the custom fee is set to 1000 uvkcoins and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBWKs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uvkccoins and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBWKs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uvkcoins and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uvkcoins in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uvkcoins. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uvkccoins and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uvkccoins in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uvkccoins. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for vkcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for vkccoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3774,7 +3774,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+632"/>
-        <source>Warning: Invalid vkcoin address</source>
+        <source>Warning: Invalid vkccoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3918,7 +3918,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The vkcoin address to send the payment to</source>
+        <source>The vkccoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3972,7 +3972,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the vkcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the vkcoin network.</source>
+        <source>A message that was attached to the vkccoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the vkccoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4007,7 +4007,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>vkcoin Core is shutting down...</source>
+        <source>vkccoin Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4035,7 +4035,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The vkcoin address to sign the message with</source>
+        <source>The vkccoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4077,17 +4077,17 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this vkcoin address</source>
+        <source>Sign the message to prove you own this vkccoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The vkcoin address the message was signed with</source>
+        <source>The vkccoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified vkcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified vkccoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4202,7 +4202,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>vkcoin Core</source>
+        <source>vkccoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4227,7 +4227,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The vkcoin Core developers</source>
+        <source>The vkccoin Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4993,9 +4993,9 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
 </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     <message>
-        <location filename="../vkcoinstrings.cpp" line="+12"/>
+        <location filename="../vkccoinstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5026,7 +5026,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Cannot obtain a lock on data directory %s. vkcoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. vkccoin Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5051,7 +5051,7 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all vkcoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all vkccoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5106,12 +5106,12 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in vkcoin/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in vkccoin/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in vkcoin/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in vkccoin/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5241,22 +5241,22 @@ https://www.transifex.com/vkcoin-project/vkcoin-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use vkccoind, or the -server option to vkcoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use vkccoind, or the -server option to vkccoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=vkcoinrpc
+rpcuser=vkccoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;vkccoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. vkcoin Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. vkccoin Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5266,12 +5266,12 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 vkcoin.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 vkccoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 vkcoin.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 vkccoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5291,7 +5291,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong vkcoin Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong vkccoin Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5481,7 +5481,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2017-%i The vkcoin Core Developers</source>
+        <source>Copyright (C) 2017-%i The vkccoin Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5571,7 +5571,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of vkcoin Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of vkccoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5636,7 +5636,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in vkcoin/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in vkccoin/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5711,7 +5711,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. vkcoin Core is shutting down.</source>
+        <source>Initialization sanity check failed. vkccoin Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6481,7 +6481,7 @@ for example: alertnotify=echo %%s | mail -s &quot;vkcoin Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart vkcoin Core to complete</source>
+        <source>Wallet needed to be rewritten: restart vkccoin Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

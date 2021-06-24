@@ -263,6 +263,6 @@
     </message>
     </context>
 <context>
-    <name>vkcoin-core</name>
+    <name>vkccoin-core</name>
     </context>
 </TS>

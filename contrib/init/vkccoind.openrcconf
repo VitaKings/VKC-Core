@@ -1,7 +1,7 @@
 # /etc/conf.d/vkccoind: config file for /etc/init.d/vkccoind
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/vkcoin/vkcoin.conf"
+#BITCOIND_CONFIGFILE="/etc/vkccoin/vkccoin.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
 #BITCOIND_PIDDIR="/var/run/vkccoind"
@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/vkccoind"
 
 # User and group to own vkccoind process
-#BITCOIND_USER="vkcoin"
-#BITCOIND_GROUP="vkcoin"
+#BITCOIND_USER="vkccoin"
+#BITCOIND_GROUP="vkccoin"
 
 # Path to vkccoind executable
 #BITCOIND_BIN="/usr/bin/vkccoind"

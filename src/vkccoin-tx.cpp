@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The vkcoin Core developers
+// Copyright (c) 2018-2019 The vkccoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -50,8 +50,8 @@ static bool AppInitRawTx(int argc, char* argv[])
         // First part of help message is specific to this utility
         std::string strUsage = _("VKC Core TX utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  vkcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded vkcoin transaction") + "\n" +
-                               "  vkcoin-tx [options] -create [commands]   " + _("Create hex-encoded vkcoin transaction") + "\n" +
+                               "  vkccoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded vkccoin transaction") + "\n" +
+                               "  vkccoin-tx [options] -create [commands]   " + _("Create hex-encoded vkccoin transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -552,7 +552,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw runtime_error("too few parameters");
 
-            // param: hex-encoded vkcoin transaction
+            // param: hex-encoded vkccoin transaction
             string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

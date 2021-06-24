@@ -1,20 +1,20 @@
 
 Debian
 ====================
-This directory contains files used to package vkccoind/vkcoin-qt
-for Debian-based Linux systems. If you compile vkccoind/vkcoin-qt yourself, there are some useful files here.
+This directory contains files used to package vkccoind/vkccoin-qt
+for Debian-based Linux systems. If you compile vkccoind/vkccoin-qt yourself, there are some useful files here.
 
-## vkcoin: URI support ##
+## vkccoin: URI support ##
 
 
-vkcoin-qt.desktop  (Gnome / Open Desktop)
+vkccoin-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install vkcoin-qt.desktop
+	sudo desktop-file-install vkccoin-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your vkcoinqt binary to `/usr/bin`
-and the `../../share/pixmaps/vkcoin128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your vkccoinqt binary to `/usr/bin`
+and the `../../share/pixmaps/vkccoin128.png` to `/usr/share/pixmaps`
 
-vkcoin-qt.protocol (KDE)
+vkccoin-qt.protocol (KDE)
