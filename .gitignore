@@ -167,3 +167,11 @@ contrib/devtools/split-debug.sh
 .vs/VKC-Core/v16/Browse.VC.db-wal
 
 .vs/VKC-Core/v16/Browse.VC.opendb
+
+.vs/VKC-Core/v16/ipch/AutoPCH/4b0385dc3b885271/CLIENTVERSION.ipch
+
+.vs/VKC-Core/v16/ipch/AutoPCH/ae0c882bd59b88f8/INIT.ipch
+
+.vs/VKC-Core/v16/ipch/AutoPCH/d54604b29bab6a37/MAIN.ipch
+
+.vs/VKC-Core/v16/ipch/AutoPCH/d845dc28f4f52784/RPCSERVER.ipch
