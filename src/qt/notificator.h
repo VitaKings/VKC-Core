@@ -6,7 +6,7 @@
 #define BITCOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/esbcoin-config.h"
+#include "config/vkcoin-config.h"
 #endif
 
 #include <QIcon>

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -31,7 +31,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// esbcoinMiner
+// vkcoinMiner
 //
 
 //
@@ -477,24 +477,24 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     return true;
 }
 
-bool fGenerateESBCs = false;
+bool fGenerateVKCs = false;
 //control the amount of times the client will check for mintable coins
 static bool fMintableCoins = false;
 static int nMintableLastCheck = 0;
 
 // ***TODO*** that part changed in bitcoin, we are using a mix with old one here for now
 
-void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
+void GenerateVKC(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("ESBC Generation thread started\n");
+    LogPrintf("VKC Generation thread started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("esbc-gen");
+    RenameThread("vkc-gen");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
     unsigned int nExtraNonce = 0;
 
-    while (fGenerateESBCs || fProofOfStake) {
+    while (fGenerateVKCs || fProofOfStake) {
         if (fProofOfStake) {
             if (chainActive.Tip()->nHeight < Params().LAST_POW_BLOCK()) {
                 MilliSleep(5000);
@@ -512,7 +512,7 @@ void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
                         fMintableCoins = pwallet->MintableCoins();
                     }
                     MilliSleep(5000);
-                    if (!fGenerateESBCs && !fProofOfStake)
+                    if (!fGenerateVKCs && !fProofOfStake)
                         continue;
                 }
             else
@@ -523,7 +523,7 @@ void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
                         fMintableCoins = pwallet->MintableCoins();
                     }
                     MilliSleep(5000);
-                    if (!fGenerateESBCs && !fProofOfStake)
+                    if (!fGenerateVKCs && !fProofOfStake)
                         continue;
                 }
             if (mapHashedBlocks.count(chainActive.Tip()->nHeight)) //search our map of hashed blocks, see if bestblock has been hashed yet
@@ -559,7 +559,7 @@ void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
             LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
 
             if (!pblock->SignBlock(*pwallet)) {
-                LogPrintf("GenerateESBC(): Signing new block failed \n");
+                LogPrintf("GenerateVKC(): Signing new block failed \n");
                 continue;
             }
 
@@ -571,7 +571,7 @@ void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        //LogPrintf("Running esbcoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(), ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
+        //LogPrintf("Running vkcoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(), ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
         // Search
@@ -587,7 +587,7 @@ void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
                 if (hash <= hashTarget) {
                     // Found a solution
                     SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                    LogPrintf("GenerateESBC:\n");
+                    LogPrintf("GenerateVKC:\n");
                     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                     ProcessBlockFound(pblock, *pwallet, reservekey);
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -647,26 +647,26 @@ void GenerateESBC(CWallet* pwallet, bool fProofOfStake)
     }
 }
 
-void static ThreadGenerateESBC(void* parg)
+void static ThreadGenerateVKC(void* parg)
 {
     boost::this_thread::interruption_point();
     CWallet* pwallet = (CWallet*)parg;
     try {
-        GenerateESBC(pwallet, false);
+        GenerateVKC(pwallet, false);
         boost::this_thread::interruption_point();
     } catch (std::exception& e) {
-        LogPrintf("ThreadGenerateESBC() exception");
+        LogPrintf("ThreadGenerateVKC() exception");
     } catch (...) {
-        LogPrintf("ThreadGenerateESBC() exception");
+        LogPrintf("ThreadGenerateVKC() exception");
     }
 
-    LogPrintf("ThreadGenerateESBC exiting\n");
+    LogPrintf("ThreadGenerateVKC exiting\n");
 }
 
-void GenerateESBCs(bool fGenerate, CWallet* pwallet, int nThreads)
+void GenerateVKCs(bool fGenerate, CWallet* pwallet, int nThreads)
 {
-    static boost::thread_group* ESBCThreads = NULL;
-    fGenerateESBCs = fGenerate;
+    static boost::thread_group* VKCThreads = NULL;
+    fGenerateVKCs = fGenerate;
 
     if (nThreads < 0) {
         // In regtest threads defaults to 1
@@ -676,16 +676,16 @@ void GenerateESBCs(bool fGenerate, CWallet* pwallet, int nThreads)
             nThreads = boost::thread::hardware_concurrency();
     }
 
-    if (ESBCThreads != NULL) {
-        ESBCThreads->interrupt_all();
-        delete ESBCThreads;
-        ESBCThreads = NULL;
+    if (VKCThreads != NULL) {
+        VKCThreads->interrupt_all();
+        delete VKCThreads;
+        VKCThreads = NULL;
     }
 
     if (nThreads != 0 && fGenerate) {
-        ESBCThreads = new boost::thread_group();
+        VKCThreads = new boost::thread_group();
         for (int i = 0; i < nThreads; i++)
-            ESBCThreads->create_thread(boost::bind(&ThreadGenerateESBC, pwallet));
+            VKCThreads->create_thread(boost::bind(&ThreadGenerateVKC, pwallet));
     }
 }
 
