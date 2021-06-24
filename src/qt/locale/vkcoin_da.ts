@@ -4118,8 +4118,8 @@ For eksempel: alertnotify=Echo %% | mail - s "vkcoin ALARM!" e-mail@administrato
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(32322 could be used only on mainnet)</source>
-        <translation>(32322 kunne kun bruges på hovednettet)</translation>
+        <source>(8898 could be used only on mainnet)</source>
+        <translation>(8898 kunne kun bruges på hovednettet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4130,8 +4130,8 @@ For eksempel: alertnotify=Echo %% | mail - s "vkcoin ALARM!" e-mail@administrato
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 32322 for mainnet)</source>
-        <translation>(skal være 32322 for hovednettet)</translation>
+        <source>(must be 8898 for mainnet)</source>
+        <translation>(skal være 8898 for hovednettet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>

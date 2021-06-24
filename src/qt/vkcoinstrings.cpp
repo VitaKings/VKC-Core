@@ -206,10 +206,10 @@ QT_TRANSLATE_NOOP("vkcoin-core", ""
 QT_TRANSLATE_NOOP("vkcoin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("vkcoin-core", "(32322 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("vkcoin-core", "(8898 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("vkcoin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("vkcoin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("vkcoin-core", "(must be 32322 for mainnet)"),
+QT_TRANSLATE_NOOP("vkcoin-core", "(must be 8898 for mainnet)"),
 QT_TRANSLATE_NOOP("vkcoin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("vkcoin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("vkcoin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
