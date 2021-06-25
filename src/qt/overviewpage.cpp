@@ -371,7 +371,7 @@ void OverviewPage::updateMasternodeInfo()
        }
 
     }
-    totalmn=mn1+mn2+mn3+mn4;
+    totalmn=mn1+mn2+mn3;
     ui->labelMnTotal_Value->setText(QString::number(totalmn));
     int maxMnValue = std::max( { mn1, mn2, mn3 }, [](const int& s1, const int& s2) { return s1 < s2; });
 
