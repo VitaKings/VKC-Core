@@ -356,7 +356,6 @@ void OverviewPage::updateMasternodeInfo()
    int mn1=0;
    int mn2=0;
    int mn3=0;
-   int mn4=0;
    int totalmn=0;
    std::vector<CMasternode> vMasternodes = mnodeman.GetFullMasternodeMap();
     for(auto& mn : vMasternodes)
@@ -369,23 +368,19 @@ void OverviewPage::updateMasternodeInfo()
            mn2++;break;
            case 3:
            mn3++;break;
-           case 4:
-           mn4++;break;
        }
 
     }
     totalmn=mn1+mn2+mn3+mn4;
     ui->labelMnTotal_Value->setText(QString::number(totalmn));
-    int maxMnValue = std::max( { mn1, mn2, mn3, mn4 }, [](const int& s1, const int& s2) { return s1 < s2; });
+    int maxMnValue = std::max( { mn1, mn2, mn3 }, [](const int& s1, const int& s2) { return s1 < s2; });
 
     ui->graphMN1->setMaximum(maxMnValue);
     ui->graphMN2->setMaximum(maxMnValue);
     ui->graphMN3->setMaximum(maxMnValue);
-    ui->graphMN4->setMaximum(maxMnValue);
     ui->graphMN1->setValue(mn1);
     ui->graphMN2->setValue(mn2);
     ui->graphMN3->setValue(mn3);
-    ui->graphMN4->setValue(mn4);
 
     // TODO: need a read actual 24h blockcount from chain
     int BlockCount24h = block24hCount > 0 ? block24hCount : 1440;
@@ -396,19 +391,16 @@ void OverviewPage::updateMasternodeInfo()
     (mn1==0) ? roi1 = 0 : roi1 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 1, BlockReward)*BlockCount24h)/mn1/COIN;
     (mn2==0) ? roi2 = 0 : roi2 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 2, BlockReward)*BlockCount24h)/mn2/COIN;
     (mn3==0) ? roi3 = 0 : roi3 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 3, BlockReward)*BlockCount24h)/mn3/COIN;
-    (mn4==0) ? roi4 = 0 : roi4 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 4, BlockReward)*BlockCount24h)/mn4/COIN;
     if (CurrentBlock >= 0) {
         ui->roi_11->setText(mn1==0 ? "-" : QString::number(roi1, 'f', roi1 > 50 ? 0 : 1).append("  |"));
         ui->roi_21->setText(mn2==0 ? "-" : QString::number(roi2, 'f', roi2 > 50 ? 0 : 1).append("  |"));
         ui->roi_31->setText(mn3==0 ? "-" : QString::number(roi3, 'f', roi3 > 50 ? 0 : 1).append("  |"));
-        ui->roi_41->setText(mn4==0 ? "-" : QString::number(roi4, 'f', roi4 > 50 ? 0 : 1).append("  |"));
 
         ui->roi_12->setText(mn1==0 ? " " : QString::number(  5000/roi1, 'f', 0).append(" days"));
-        ui->roi_22->setText(mn2==0 ? " " : QString::number( 25000/roi2, 'f', 0).append(" days"));
-        ui->roi_32->setText(mn3==0 ? " " : QString::number( 50000/roi3, 'f', 0).append(" days"));
-        ui->roi_42->setText(mn4==0 ? " " : QString::number(250000/roi4, 'f', 0).append(" days"));
+        ui->roi_22->setText(mn2==0 ? " " : QString::number( 7500/roi2, 'f', 0).append(" days"));
+        ui->roi_32->setText(mn3==0 ? " " : QString::number( 10000/roi3, 'f', 0).append(" days"));
     }
-    CAmount tNodesSumm = mn1*5000 + mn2*25000 + mn3*50000 + mn4*250000;
+    CAmount tNodesSumm = mn1*5000 + mn2*7500 + mn3*10000;
     CAmount tMoneySupply = chainActive.Tip()->nMoneySupply;
     double tLocked = tMoneySupply > 0 ? 100 * static_cast<double>(tNodesSumm) / static_cast<double>(tMoneySupply / COIN) : 0;
     ui->label_LockedCoin_value->setText(QString::number(tNodesSumm).append(" (" + QString::number(tLocked,'f',1) + "%)"));
@@ -421,9 +413,8 @@ void OverviewPage::updateMasternodeInfo()
   // update collateral info
   if (CurrentBlock >= 0) {
       ui->label_lcolat->setText("5000 VKC");
-      ui->label_mcolat->setText("25000 VKC");
-      ui->label_fcolat->setText("50000 VKC");
-      ui->label_pcolat->setText("250000 VKC");
+      ui->label_mcolat->setText("7500 VKC");
+      ui->label_fcolat->setText("10000 VKC");
   }
 
 }
@@ -705,22 +696,22 @@ void OverviewPage::toggleObfuscation()
 }
 
 void OverviewPage::on_pushButton_Website_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Discord_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/link/discord", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://discord.gg/nv3CnRXudj", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Telegram_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/link/telegram", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Twitter_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/link/twitter", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://twitter.com/coin_vita", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Reddit_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/link/reddit", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Medium_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/link/medium", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 /*
 void OverviewPage::on_pushButton_Facebook_clicked() {
@@ -728,5 +719,5 @@ void OverviewPage::on_pushButton_Facebook_clicked() {
 }
 */
 void OverviewPage::on_pushButton_Explorer_clicked() {
-    QDesktopServices::openUrl(QUrl("https://vkc.pro/link/explorer", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vitakingexplorer.obscurecoins.com/", QUrl::TolerantMode));
 }
