@@ -240,7 +240,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x001"));
+        //assert(hashGenesisBlock == uint256("0x001"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
