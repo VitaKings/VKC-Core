@@ -693,7 +693,7 @@
 
      QWidget .QFrame#frame_blue .QLabel#label_5 { /* Balance Label */
             background-color:transparent;
-            color:#145484;
+            color:#d7e0e9;
             font-size:20px;
           }
 
@@ -708,14 +708,14 @@
 
     QWidget .QFrame#frame_blue .QLabel#labelTotalText { /* Total text Label */
             background-color:transparent;
-            color:#145484;
+            color:#d7e0e9;
             font-size:15px;
          }
 
 
     QWidget .QFrame#frame_blue .QLabel#labelTotal { /* Total balance count Label */
             background-color:transparent;
-            color:#145484;
+            color:#d7e0e9;
             font-weight: 100;
             font-size:55px;
          }
@@ -724,7 +724,7 @@
             background-color: transparent;
             border:0;
             border-radius:0px;
-            color: #145484;
+            color: #d7e0e9;
             font-size:35px;
             padding-left:0px;
             padding-right:0px;
@@ -743,58 +743,58 @@
 
      QWidget .QFrame#frame_blue .QLabel#labelBalanceText { /*available text */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelBalance {/*available */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:30px;
      }
 
 
      QWidget .QFrame#frame_blue .QLabel#label_vkcoin2 { /*vkcoin */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelPendingText { /*pending text */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelUnconfirmed { /*pending(unconfirmed) */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:30px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#label_vkcoin3 { /*vkcoin */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelImmatureText { /*Immature text */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
 
      QWidget .QFrame#frame_blue .QLabel#labelImmature { /*Immature */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:30px;
      }
 
 
      QWidget .QFrame#frame_blue .QLabel#label_vkcoin4 { /*vkcoin */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
