@@ -253,7 +253,6 @@ void MasternodeList::updateMyMasternodeInfo(QString strAlias, QString strAddr, C
             case 1: mnLevelText = "Bronze"; if (roi1 > 1) tLuck = ((masternodeCoins/COIN) / roi1)*100; break;
             case 2: mnLevelText = "Silver"; if (roi2 > 1) tLuck = ((masternodeCoins/COIN) / roi2)*100; break;
             case 3: mnLevelText = "Gold"; if (roi3 > 1) tLuck = ((masternodeCoins/COIN) / roi3)*100; break;
-            case 4: mnLevelText = "Platinum"; if (roi4 > 1) tLuck = ((masternodeCoins/COIN) / roi4)*100; break;
         }
     }
 
@@ -365,7 +364,6 @@ void MasternodeList::updateNodeList()
             case 1: mnLevelText = "Bronze"; if (roi1 > 1) tLuck = ((masternodeCoins/COIN) / roi1)*100; break;
             case 2: mnLevelText = "Silver"; if (roi2 > 1) tLuck = ((masternodeCoins/COIN) / roi2)*100; break;
             case 3: mnLevelText = "Gold"; if (roi3 > 1) tLuck = ((masternodeCoins/COIN) / roi3)*100; break;
-            case 4: mnLevelText = "Platinum"; if (roi4 > 1) tLuck = ((masternodeCoins/COIN) / roi4)*100; break;
         }
 
         QTableWidgetItem *levelItem = new QTableWidgetItem(QString::fromStdString(mnLevelText));
