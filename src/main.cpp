@@ -1670,7 +1670,7 @@ CAmount GetDevFeeValue(int nHeight)
     int nDevFeeCycle = 1440;
     int devFee = 1; // 1%
 
-    if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > Params().LAST_POW_BLOCK()))s
+    if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > Params().LAST_POW_BLOCK()))
         nAmount = (GetBlockValue(nHeight) * devFee / 100) * nDevFeeCycle;
 
     return nAmount;
