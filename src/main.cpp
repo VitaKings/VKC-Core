@@ -1704,17 +1704,16 @@ CAmount GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nProtocol, unsigned mnlevel, int64_t blockValue)
 {
-    int64_t mnPayment;
 
     switch (mnlevel)
     {
 	     // divy out shares
         case 1:
-            return mnPayment * 0.15;
+            return blockValue * 0.15;
         case 2:
-            return mnPayment * 0.25;
+            return blockValue * 0.25;
         case 3:
-            return mnPayment * 0.35;
+            return blockValue * 0.35;
     }      
 
     return 0;
