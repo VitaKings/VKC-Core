@@ -13,7 +13,7 @@ else
     exit 1
 fi
 
-DESC="ESBC Core"
+DESC="VKC Core"
 SUFFIX=""
 LAST_COMMIT_DATE=""
 if [ -e "$(which git 2>/dev/null)" -a "$(git rev-parse --is-inside-work-tree 2>/dev/null)" = "true" ]; then

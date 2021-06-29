@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX Core developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -28,7 +28,7 @@ struct CDNSSeedData {
 
 /**
  * CChainParams defines various tweakable parameters of a given instance of the
- * esbcoin system. There are three: the main network on which people trade goods
+ * vkcoin system. There are three: the main network on which people trade goods
  * and services, the public test network which gets reset from time to time and
  * a regression test mode which is intended for private networks only. It has
  * minimal difficulty to ensure that blocks can be found instantly.
@@ -52,8 +52,8 @@ public:
     const std::vector<unsigned char>& AlertKey() const { return vAlertPubKey; }
     const std::vector<unsigned char>& GMKey() const { return vGMPubKey; }
 
-    // const std::vector<unsigned char>& esbcoinDevKey() const { return vesbcoinDevKey; }
-    // const std::vector<unsigned char>& esbcoinFundKey() const { return vesbcoinFundKey; }
+    // const std::vector<unsigned char>& vkcoinDevKey() const { return vvkcoinDevKey; }
+    // const std::vector<unsigned char>& vkcoinFundKey() const { return vvkcoinFundKey; }
     // int GetDevFee() const { return nDevFee; }
     // int GetFundFee() const { return nFundFee; }
 
@@ -122,8 +122,8 @@ protected:
     //! Raw pub key bytes for the broadcast alert signing key.
     std::vector<unsigned char> vAlertPubKey;
     std::vector<unsigned char> vGMPubKey;
-    // std::vector<unsigned char> vesbcoinDevKey;
-    // std::vector<unsigned char> vesbcoinFundKey;
+    // std::vector<unsigned char> vvkcoinDevKey;
+    // std::vector<unsigned char> vvkcoinFundKey;
     // int nDevFee;
     // int nFundFee;
     int nDefaultPort;

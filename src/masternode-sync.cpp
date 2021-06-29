@@ -179,7 +179,7 @@ std::string CMasternodeSync::GetSyncStatus()
         case MASTERNODE_SYNC_FINISHED:
             return _("Synchronization finished");
         case MASTERNODE_SYNC_GM:
-            return _("Synchronizing ESBC data...");
+            return _("Synchronizing VKC data...");
     }
     return "";
 }

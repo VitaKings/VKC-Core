@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,7 +45,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "esbcoin cannot be compiled without assertions."
+#error "vkcoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -78,7 +78,7 @@ bool fGM = DEFAULT_GM;
 unsigned int nStakeMinAge = 4 * 60 * 60; // 4 hours
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in uesbcoin) are considered zero fee (for relaying and mining)
+/** Fees smaller than this (in uvkcoin) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -1667,10 +1667,10 @@ double ConvertBitsToDouble(unsigned int nBits)
 CAmount GetDevFeeValue(int nHeight)
 {
     int64_t nAmount = 0;
-    int nDevFeeCycle = 5040;
-    int devFee = 10; // 10%
+    int nDevFeeCycle = 1440;
+    int devFee = 1; // 1%
 
-    if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > CONSENSUS_FORK_REWARD_UPDATE_BLOCK))
+    if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > Params().LAST_POW_BLOCK()))
         nAmount = (GetBlockValue(nHeight) * devFee / 100) * nDevFeeCycle;
 
     return nAmount;
@@ -1681,95 +1681,40 @@ CAmount GetBlockValue(int nHeight)
     // anti instamine
     int64_t nSubsidy = 0;
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET){
-        if ( nHeight == 0 ) {
-            nSubsidy = 10000000 * COIN; // premine
-        } else if (nHeight < 200) {
-            nSubsidy = 200 * COIN;
-        } else if (nHeight >= 200 && nHeight < 2000) {
-            nSubsidy = 50 * COIN;
-        } else if (nHeight >= 2000 && nHeight < 4000) {
-            nSubsidy = 40 * COIN;
-        } else if (nHeight >= 4000 && nHeight < 6000) {
-            nSubsidy = 30 * COIN;
-        } else if (nHeight >= 6000 && nHeight < 8000) {
-            nSubsidy = 20 * COIN;
-        } else if (nHeight >= 8000) {
-            nSubsidy = 10 * COIN;
-        }
-    } else {
-        if ( nHeight == 0 ) {
-            nSubsidy = 1000000 * COIN; // premine
-        } else if (nHeight < 200) {
-            nSubsidy = 0 * COIN;
-        } else if (nHeight >= 200 && nHeight < 5050) {
-            nSubsidy = 5 * COIN;
-        } else if (nHeight >= 5050 && nHeight < 26551) {
-            nSubsidy = 30 * COIN;
-        } else if (nHeight >= 26551 && nHeight < 48052) {
-            nSubsidy = 40 * COIN;
-        } else if (nHeight >= 48052 && nHeight < 69553) {
-            nSubsidy = 50 * COIN;
-        } else if (nHeight >= 69553 && nHeight < 96804) {
-            nSubsidy = 60 * COIN;
-        } else if (nHeight >= 96804 && nHeight < 187805) {
-            nSubsidy = 55 * COIN;
-        } else if (nHeight >= 187805 && nHeight < 392807) {
-            nSubsidy = 50 * COIN;
-        } else if (nHeight >= 392807 && nHeight < 522808) {
-            nSubsidy = 25 * COIN;
-        } else if (nHeight >= 522808 && nHeight < 652809) {
-            nSubsidy = 12.5 * COIN;
-        } else if (nHeight >= 652809 && nHeight < CONSENSUS_FORK_REWARD_UPDATE_BLOCK) {
-            nSubsidy = 6.25 * COIN;
-        } else if (nHeight >= CONSENSUS_FORK_REWARD_UPDATE_BLOCK && nHeight < CONSENSUS_FORK_REWARD_UPDATE_BLOCK + 1000) {
-            nSubsidy = 0 * COIN;
-        } else if (nHeight >= CONSENSUS_FORK_REWARD_UPDATE_BLOCK + 1000) {
-            nSubsidy = 25 * COIN;
-        }
-    }
+	if (nHeight == 0)                                   { nSubsidy = 150000 * COIN;
+    } else if (nHeight > 1 && nHeight <= 10000)         { nSubsidy = 1 * COIN;
+    } else if (nHeight > 10000 && nHeight <= 50000)     { nSubsidy = 2 * COIN;
+    } else if (nHeight > 50000 && nHeight <= 100000)    { nSubsidy = 5 * COIN;
+    } else if (nHeight > 100000 && nHeight <= 400000)   { nSubsidy = 7 * COIN;
+    } else if (nHeight > 400000 && nHeight <= 500000)   { nSubsidy = 10 * COIN;
+    } else if (nHeight > 500000 && nHeight <= 1000000)  { nSubsidy = 12 * COIN;
+    } else if (nHeight > 1000000 && nHeight <= 3000000) { nSubsidy = 7 * COIN;
+    } else if (nHeight > 3000000)                       { nSubsidy = 5 * COIN; }
 
-    if (chainActive.Height() > CONSENSUS_FORK_REWARD_UPDATE_BLOCK)
-      return nSubsidy;
-    else {
-      // Check if we reached the coin max supply.
-      int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-      if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
+	// Check if we reached the coin max supply.
+    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
+
+    if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
         nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
-      if (nMoneySupply >= Params().MaxMoneyOut())
+    if (nMoneySupply >= Params().MaxMoneyOut())
         nSubsidy = 0;
-    }
 
     return nSubsidy;
 }
 
 int64_t GetMasternodePayment(int nProtocol, unsigned mnlevel, int64_t blockValue)
 {
-//    if (nHeight <= Params().StartMNPaymentsBlock())
-//        return 0;
 
-    if (nProtocol >= CONSENSUS_FORK_REWARD_UPDATE_PROTOCOL) {
-        switch(mnlevel) {
-            case 1: return blockValue * 0.09;
-            case 2: return blockValue * 0.18;
-            case 3: return blockValue * 0.27;
-            case 4: return blockValue * 0.36;
-        }
-    } else if (nProtocol >= CONSENSUS_FORK_PROTO) {
-        switch(mnlevel) {
-            case 1: return blockValue * 0.15;
-            case 2: return blockValue * 0.20;
-            case 3: return blockValue * 0.25;
-            case 4: return blockValue * 0.30;
-        }
-    } else {
-        switch(mnlevel) {
-            case 1: return blockValue * 0.2;
-            case 2: return blockValue * 0.3;
-            case 3: return blockValue * 0.3;
-            case 4: return blockValue * 0.02;
-        }
-    }
+    switch (mnlevel)
+    {
+	     // divy out shares
+        case 1:
+            return blockValue * 0.15;
+        case 2:
+            return blockValue * 0.25;
+        case 3:
+            return blockValue * 0.35;
+    }      
 
     return 0;
 }
@@ -2165,7 +2110,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("esbcoin-scriptch");
+    RenameThread("vkcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -3276,7 +3221,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // esbcoin
+        // vkcoin
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.

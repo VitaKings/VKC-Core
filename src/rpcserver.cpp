@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -243,10 +243,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop ESBC server.");
+            "\nStop VKC server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "ESBC server stopping";
+    return "VKC server stopping";
 }
 
 
@@ -323,25 +323,25 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* esbc features */
-        {"esbc", "masternode", &masternode, true, true, false},
-        {"esbc", "listmasternodes", &listmasternodes, true, true, false},
-        {"esbc", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"esbc", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"esbc", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"esbc", "masternodedebug", &masternodedebug, true, true, false},
-        {"esbc", "startmasternode", &startmasternode, true, true, false},
-        {"esbc", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"esbc", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"esbc", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"esbc", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"esbc", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"esbc", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"esbc", "mnsync", &mnsync, true, true, false},
-        {"esbc", "spork", &spork, true, true, false},
-        {"esbc", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* vkc features */
+        {"vkc", "masternode", &masternode, true, true, false},
+        {"vkc", "listmasternodes", &listmasternodes, true, true, false},
+        {"vkc", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"vkc", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"vkc", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"vkc", "masternodedebug", &masternodedebug, true, true, false},
+        {"vkc", "startmasternode", &startmasternode, true, true, false},
+        {"vkc", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"vkc", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"vkc", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"vkc", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"vkc", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"vkc", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"vkc", "mnsync", &mnsync, true, true, false},
+        {"vkc", "spork", &spork, true, true, false},
+        {"vkc", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"esbc", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"vkc", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -613,16 +613,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use esbcoind, or the -server option to esbcoin-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use vkcoind, or the -server option to vkcoin-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=esbcrpc\n"
+                                               "rpcuser=vkcrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"esbc Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"vkc Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1075,7 +1075,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> esbcoin-cli " + methodname + " " + args + "\n";
+    return "> vkcoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=vkcoin
+Comment=VKC P2P Cryptocurrency
+Exec=vkcoin-qt %u
+Terminal=false
+Type=Application
+Icon=vkcoin128
+MimeType=x-scheme-handler/vkcoin;
+Categories=Office;Finance;
+Name[ru]=vkcoin-qt.desktop.desktop

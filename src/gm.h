@@ -1,11 +1,11 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Copyright (c) 2018-2019 The ESBC Core developers
+// Copyright (c) 2018-2019 The VKC Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ESBC_GM_H
-#define ESBC_GM_H
+#ifndef VKC_GM_H
+#define VKC_GM_H
 
 #include "base58.h"
 #include "key.h"
@@ -110,4 +110,4 @@ public:
     static CGM getMessageByHash(const uint256& hash);
 };
 
-#endif // ESBC_GM_H
+#endif // VKC_GM_H

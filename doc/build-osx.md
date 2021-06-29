@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build esbcoind (headless client) for OSX.
+This guide will show you how to build vkcoind (headless client) for OSX.
 
 Notes
 -----
@@ -36,14 +36,14 @@ Instructions: Homebrew
         brew install boost@1.57
         brew link boost@1.57 --force
 
-### Building `ESBC`
+### Building `VKC`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/BlockchainFor/ESBC2.git
-        cd ESBC2
+        git clone https://github.com/BlockchainFor/VKC2.git
+        cd VKC2
 
-2.  Build esbcoind:
+2.  Build vkcoind:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -53,11 +53,11 @@ Instructions: Homebrew
 
         make check
 
-4.  (Optional) You can also install esbcoind to your path:
+4.  (Optional) You can also install vkcoind to your path:
 
         make install
 
-5.  (Optional) You can also build dmg image for esbcoin-qt:
+5.  (Optional) You can also build dmg image for vkcoin-qt:
 
         make deploy
 
@@ -70,7 +70,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "esbcoin-qt" as project name, enter src/qt as location
+4. Enter "vkcoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -80,11 +80,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `esbcoind` for your own use.
+You can ignore this section if you are building `vkcoind` for your own use.
 
-esbcoind/esbcoin-cli binaries are not included in the esbcoin-qt.app bundle.
+vkcoind/vkcoin-cli binaries are not included in the vkcoin-qt.app bundle.
 
-If you are building `esbcoind` or `esbcoin-qt` for others, your build machine should be set up
+If you are building `vkcoind` or `vkcoin-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -93,30 +93,30 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the esbcoin-qt.app
+Once dependencies are compiled, see release-process.md for how the vkcoin-qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./esbcoind`, provided that you are still in the `src`
+It's now available at `./vkcoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./esbcoind` to get the filename where it should be put, or just try these
+Run `./vkcoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=esbcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/esbcoin/esbcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/esbcoin/esbcoin.conf"
+    echo -e "rpcuser=vkcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/vkcoin/vkcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/vkcoin/vkcoin.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/esbcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/vkcoin/debug.log
 
 Other commands:
 -------
 
-    ./esbcoind -daemon # to start the esbcoin daemon.
-    ./esbcoin-cli --help  # for a list of command-line options.
-    ./esbcoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./vkcoind -daemon # to start the vkcoin daemon.
+    ./vkcoin-cli --help  # for a list of command-line options.
+    ./vkcoin-cli help    # When the daemon is running, to get a list of RPC commands

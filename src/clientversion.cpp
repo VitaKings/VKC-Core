@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both esbcoind and esbcoin-qt, to make it harder for attackers to
+ * for both vkcoind and vkcoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("ESBC Core");
+const std::string CLIENT_NAME("VKC Core");
 
 /**
  * Client version number

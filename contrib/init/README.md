@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: esbcoind.service
-Upstart: esbcoind.conf
-OpenRC:  esbcoind.openrc
-         esbcoind.openrcconf
-CentOS:  esbcoind.init
+SystemD: vkcoind.service
+Upstart: vkcoind.conf
+OpenRC:  vkcoind.openrc
+         vkcoind.openrcconf
+CentOS:  vkcoind.init
 
 have been made available to assist packagers in creating node packages here.
 

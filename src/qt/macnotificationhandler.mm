@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.esbcoin.esbcoinCore-Qt";
+        return @"io.vkcoin.vkcoinCore-Qt";
     } else {
         return [self __bundleIdentifier];
     }

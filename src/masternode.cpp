@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -313,9 +313,8 @@ unsigned CMasternode::Level(CAmount vin_val, int blockHeight)
     if (blockHeight >= 0 ) {
       switch(vin_val) {
           case 5000 * COIN: return 1;
-          case 25000 * COIN: return 2;
-          case 50000 * COIN: return 3;
-          case 250000 * COIN: return 4;
+          case 7500 * COIN: return 2;
+          case 10000 * COIN: return 3;
       }
     }
     return 0;
@@ -655,13 +654,13 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
     }
 
     // verify that sig time is legit in past
-    // should be at least not earlier than block when 1000 esbcoin tx got MASTERNODE_MIN_CONFIRMATIONS
+    // should be at least not earlier than block when 1000 vkcoin tx got MASTERNODE_MIN_CONFIRMATIONS
     uint256 hashBlock = 0;
     CTransaction tx2;
     GetTransaction(vin.prevout.hash, tx2, hashBlock, true);
     BlockMap::iterator mi = mapBlockIndex.find(hashBlock);
     if (mi != mapBlockIndex.end() && mi->second) {
-        CBlockIndex* pMNIndex = mi->second;                                                        // block for 1000 esbcoin tx -> 1 confirmation
+        CBlockIndex* pMNIndex = mi->second;                                                        // block for 1000 vkcoin tx -> 1 confirmation
         CBlockIndex* pConfIndex = chainActive[pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1]; // block where tx got MASTERNODE_MIN_CONFIRMATIONS
         if (pConfIndex->GetBlockTime() > sigTime) {
             LogPrintf("mnb - Bad sigTime %d for Masternode %s (%i conf block is at %d)\n",

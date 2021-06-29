@@ -2,7 +2,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2017-2018 The Bulwark developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,11 +19,11 @@ static const int PROTOCOL_VERSION = 70225;
 static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70223;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70225;
 
-static const int CONSENSUS_FORK_REWARD_UPDATE_PROTOCOL = 70225;
-static const int CONSENSUS_FORK_REWARD_UPDATE_BLOCK = 685000;
+static const int CONSENSUS_FORK_REWARD_UPDATE_PROTOCOL = 70225; //Keeping for history, not being used other then dev fee
+static const int CONSENSUS_FORK_REWARD_UPDATE_BLOCK = 685000;	//Keeping for history, not being used other then dev fee
 
-static const int CONSENSUS_FORK_PROTO = 70223;
-static const int CONSENSUS_FORK_PROTO_TIME = 1554746400; // Monday, 08-Apr-19 18:00:00 UTC
+static const int CONSENSUS_FORK_PROTO = 70223;           // Keeping for history, not used in this fork
+static const int CONSENSUS_FORK_PROTO_TIME = 1554746400; // Monday, 08-Apr-19 18:00:00 UTC Not used in this chain
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;

@@ -693,7 +693,7 @@
 
      QWidget .QFrame#frame_blue .QLabel#label_5 { /* Balance Label */
             background-color:transparent;
-            color:#145484;
+            color:#d7e0e9;
             font-size:20px;
           }
 
@@ -708,23 +708,23 @@
 
     QWidget .QFrame#frame_blue .QLabel#labelTotalText { /* Total text Label */
             background-color:transparent;
-            color:#145484;
+            color:#d7e0e9;
             font-size:15px;
          }
 
 
     QWidget .QFrame#frame_blue .QLabel#labelTotal { /* Total balance count Label */
             background-color:transparent;
-            color:#145484;
+            color:#d7e0e9;
             font-weight: 100;
             font-size:55px;
          }
 
-    QWidget .QPushButton#blabel_esbcoin {
+    QWidget .QPushButton#blabel_vkcoin {
             background-color: transparent;
             border:0;
             border-radius:0px;
-            color: #145484;
+            color: #d7e0e9;
             font-size:35px;
             padding-left:0px;
             padding-right:0px;
@@ -743,58 +743,58 @@
 
      QWidget .QFrame#frame_blue .QLabel#labelBalanceText { /*available text */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelBalance {/*available */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:30px;
      }
 
 
-     QWidget .QFrame#frame_blue .QLabel#label_esbcoin2 { /*esbcoin */
+     QWidget .QFrame#frame_blue .QLabel#label_vkcoin2 { /*vkcoin */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelPendingText { /*pending text */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelUnconfirmed { /*pending(unconfirmed) */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:30px;
      }
 
-     QWidget .QFrame#frame_blue .QLabel#label_esbcoin3 { /*esbcoin */
+     QWidget .QFrame#frame_blue .QLabel#label_vkcoin3 { /*vkcoin */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
      QWidget .QFrame#frame_blue .QLabel#labelImmatureText { /*Immature text */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
 
      QWidget .QFrame#frame_blue .QLabel#labelImmature { /*Immature */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:30px;
      }
 
 
-     QWidget .QFrame#frame_blue .QLabel#label_esbcoin4 { /*esbcoin */
+     QWidget .QFrame#frame_blue .QLabel#label_vkcoin4 { /*vkcoin */
         background-color:transparent;
-        color:#145484;
+        color:#d7e0e9;
         font-size:15px;
      }
 
@@ -803,7 +803,7 @@
 
     QWidget .QFrame#frame_blue_3 { /* logo */
 
-        background-image: url(':/images/esbcoin_logo_horizontal');
+        background-image: url(':/images/vkcoin_logo_horizontal');
         background-repeat:none;
         background-position: top-right;
         border-style: none;
@@ -2191,7 +2191,7 @@
     border:0;
     }
 
-    /* About esbcoin Dialog */
+    /* About vkcoin Dialog */
     QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Bulwark Contents */
     margin-left:10px;
     }

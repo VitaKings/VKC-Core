@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -46,7 +46,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::ESBC)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::VKC)
     {
     }
 
@@ -146,19 +146,19 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
     ui->setupUi(this);
 
     ui->pushButton_Website->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/website")));
-    ui->pushButton_Website->setStatusTip(tr("Go to ESBC Website"));
+    ui->pushButton_Website->setStatusTip(tr("Go to VKC Website"));
     ui->pushButton_Discord->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/discord")));
-    ui->pushButton_Discord->setStatusTip(tr("Join ESBC Discord"));
+    ui->pushButton_Discord->setStatusTip(tr("Join VKC Discord"));
     ui->pushButton_Telegram->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/telegram")));
-    ui->pushButton_Telegram->setStatusTip(tr("Join ESBC Telegram"));
+    ui->pushButton_Telegram->setStatusTip(tr("Join VKC Telegram"));
     ui->pushButton_Twitter->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/twitter")));
-    ui->pushButton_Twitter->setStatusTip(tr("Read ESBC Twitter"));
+    ui->pushButton_Twitter->setStatusTip(tr("Read VKC Twitter"));
     ui->pushButton_Explorer->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/explorer")));
-    ui->pushButton_Explorer->setStatusTip(tr("Go to ESBC Explorer"));
+    ui->pushButton_Explorer->setStatusTip(tr("Go to VKC Explorer"));
     ui->pushButton_Reddit->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/reddit")));
-    ui->pushButton_Reddit->setStatusTip(tr("Read ESBC reddit"));
+    ui->pushButton_Reddit->setStatusTip(tr("Read VKC reddit"));
     ui->pushButton_Medium->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/medium")));
-    ui->pushButton_Medium->setStatusTip(tr("Read ESBC Medium"));
+    ui->pushButton_Medium->setStatusTip(tr("Read VKC Medium"));
 
     // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
@@ -228,7 +228,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
 
-    // esbcoin labels
+    // vkcoin labels
 
     if(balance != 0)
         ui->labelBalance->setText(BitcoinUnits::floorHtmlWithoutUnit(nDisplayUnit, currentBalance, false, BitcoinUnits::separatorNever));
@@ -247,7 +247,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
-//    ui->label_esbcoin4->setVisible(showImmature || showWatchOnlyImmature);
+//    ui->label_vkcoin4->setVisible(showImmature || showWatchOnlyImmature);
 
    // ui->labelWatchImmature->setVisible(showWatchOnlyImmature); // show watch-only immature balance
 
@@ -314,12 +314,12 @@ void OverviewPage::setWalletModel(WalletModel* model)
         // connect(ui->obfuscationReset, SIGNAL(clicked()), this, SLOT(obfuscationReset()));
         // connect(ui->toggleObfuscation, SIGNAL(clicked()), this, SLOT(toggleObfuscation()));
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
-        connect(ui->blabel_esbcoin, SIGNAL(clicked()), this, SLOT(openMyAddresses()));
+        connect(ui->blabel_vkcoin, SIGNAL(clicked()), this, SLOT(openMyAddresses()));
 
         emit model->makeBalance();
     }
 
-    // update the display unit, to not use the default ("esbcoin")
+    // update the display unit, to not use the default ("vkcoin")
     updateDisplayUnit();
 }
 
@@ -356,7 +356,6 @@ void OverviewPage::updateMasternodeInfo()
    int mn1=0;
    int mn2=0;
    int mn3=0;
-   int mn4=0;
    int totalmn=0;
    std::vector<CMasternode> vMasternodes = mnodeman.GetFullMasternodeMap();
     for(auto& mn : vMasternodes)
@@ -369,23 +368,19 @@ void OverviewPage::updateMasternodeInfo()
            mn2++;break;
            case 3:
            mn3++;break;
-           case 4:
-           mn4++;break;
        }
 
     }
-    totalmn=mn1+mn2+mn3+mn4;
+    totalmn=mn1+mn2+mn3;
     ui->labelMnTotal_Value->setText(QString::number(totalmn));
-    int maxMnValue = std::max( { mn1, mn2, mn3, mn4 }, [](const int& s1, const int& s2) { return s1 < s2; });
+    int maxMnValue = std::max( { mn1, mn2, mn3 }, [](const int& s1, const int& s2) { return s1 < s2; });
 
     ui->graphMN1->setMaximum(maxMnValue);
     ui->graphMN2->setMaximum(maxMnValue);
     ui->graphMN3->setMaximum(maxMnValue);
-    ui->graphMN4->setMaximum(maxMnValue);
     ui->graphMN1->setValue(mn1);
     ui->graphMN2->setValue(mn2);
     ui->graphMN3->setValue(mn3);
-    ui->graphMN4->setValue(mn4);
 
     // TODO: need a read actual 24h blockcount from chain
     int BlockCount24h = block24hCount > 0 ? block24hCount : 1440;
@@ -396,19 +391,16 @@ void OverviewPage::updateMasternodeInfo()
     (mn1==0) ? roi1 = 0 : roi1 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 1, BlockReward)*BlockCount24h)/mn1/COIN;
     (mn2==0) ? roi2 = 0 : roi2 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 2, BlockReward)*BlockCount24h)/mn2/COIN;
     (mn3==0) ? roi3 = 0 : roi3 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 3, BlockReward)*BlockCount24h)/mn3/COIN;
-    (mn4==0) ? roi4 = 0 : roi4 = static_cast<double>(GetMasternodePayment(ActiveProtocol(), 4, BlockReward)*BlockCount24h)/mn4/COIN;
     if (CurrentBlock >= 0) {
         ui->roi_11->setText(mn1==0 ? "-" : QString::number(roi1, 'f', roi1 > 50 ? 0 : 1).append("  |"));
         ui->roi_21->setText(mn2==0 ? "-" : QString::number(roi2, 'f', roi2 > 50 ? 0 : 1).append("  |"));
         ui->roi_31->setText(mn3==0 ? "-" : QString::number(roi3, 'f', roi3 > 50 ? 0 : 1).append("  |"));
-        ui->roi_41->setText(mn4==0 ? "-" : QString::number(roi4, 'f', roi4 > 50 ? 0 : 1).append("  |"));
 
         ui->roi_12->setText(mn1==0 ? " " : QString::number(  5000/roi1, 'f', 0).append(" days"));
-        ui->roi_22->setText(mn2==0 ? " " : QString::number( 25000/roi2, 'f', 0).append(" days"));
-        ui->roi_32->setText(mn3==0 ? " " : QString::number( 50000/roi3, 'f', 0).append(" days"));
-        ui->roi_42->setText(mn4==0 ? " " : QString::number(250000/roi4, 'f', 0).append(" days"));
+        ui->roi_22->setText(mn2==0 ? " " : QString::number( 7500/roi2, 'f', 0).append(" days"));
+        ui->roi_32->setText(mn3==0 ? " " : QString::number( 10000/roi3, 'f', 0).append(" days"));
     }
-    CAmount tNodesSumm = mn1*5000 + mn2*25000 + mn3*50000 + mn4*250000;
+    CAmount tNodesSumm = mn1*5000 + mn2*7500 + mn3*10000;
     CAmount tMoneySupply = chainActive.Tip()->nMoneySupply;
     double tLocked = tMoneySupply > 0 ? 100 * static_cast<double>(tNodesSumm) / static_cast<double>(tMoneySupply / COIN) : 0;
     ui->label_LockedCoin_value->setText(QString::number(tNodesSumm).append(" (" + QString::number(tLocked,'f',1) + "%)"));
@@ -420,10 +412,9 @@ void OverviewPage::updateMasternodeInfo()
 
   // update collateral info
   if (CurrentBlock >= 0) {
-      ui->label_lcolat->setText("5000 ESBC");
-      ui->label_mcolat->setText("25000 ESBC");
-      ui->label_fcolat->setText("50000 ESBC");
-      ui->label_pcolat->setText("250000 ESBC");
+      ui->label_lcolat->setText("5000 VKC");
+      ui->label_mcolat->setText("7500 VKC");
+      ui->label_fcolat->setText("10000 VKC");
   }
 
 }
@@ -435,7 +426,7 @@ void OverviewPage::updateBlockChainInfo()
         int CurrentBlock = clientModel->getNumBlocks();
         int64_t netHashRate = chainActive.GetNetworkHashPS(24, CurrentBlock-1);
         double BlockReward = GetBlockValue(CurrentBlock);
-        double BlockRewardesbcoin =  static_cast<double>(BlockReward/COIN);
+        double BlockRewardvkcoin =  static_cast<double>(BlockReward/COIN);
         double CurrentDiff = GetDifficulty();
 
         ui->label_CurrentBlock_value->setText(QString::number(CurrentBlock));
@@ -443,9 +434,9 @@ void OverviewPage::updateBlockChainInfo()
         ui->label_Nethash->setText(tr("Difficulty:"));
         ui->label_Nethash_value->setText(QString::number(CurrentDiff,'f',4));
 
-        ui->label_CurrentBlockReward_value->setText(QString::number(BlockRewardesbcoin, 'f', 1).append(" | ") + QString::number(GetSporkValue(SPORK_11_DEV_FEE)).append("%"));
+        ui->label_CurrentBlockReward_value->setText(QString::number(BlockRewardvkcoin, 'f', 1).append(" | ") + QString::number(GetSporkValue(SPORK_11_DEV_FEE)).append("%"));
 
-        ui->label_Supply_value->setText(QString::number(chainActive.Tip()->nMoneySupply / COIN).append(" ESBC"));
+        ui->label_Supply_value->setText(QString::number(chainActive.Tip()->nMoneySupply / COIN).append(" VKC"));
 
         ui->label_24hBlock_value->setText(QString::number(block24hCount));
         ui->label_24hPoS_value->setText(QString::number(static_cast<double>(posMin)/COIN,'f',1).append(" | ") + QString::number(static_cast<double>(posMax)/COIN,'f',1));
@@ -705,22 +696,22 @@ void OverviewPage::toggleObfuscation()
 }
 
 void OverviewPage::on_pushButton_Website_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Discord_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/link/discord", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://discord.gg/nv3CnRXudj", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Telegram_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/link/telegram", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Twitter_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/link/twitter", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://twitter.com/coin_vita", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Reddit_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/link/reddit", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 void OverviewPage::on_pushButton_Medium_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/link/medium", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vita-kings.com/", QUrl::TolerantMode));
 }
 /*
 void OverviewPage::on_pushButton_Facebook_clicked() {
@@ -728,5 +719,5 @@ void OverviewPage::on_pushButton_Facebook_clicked() {
 }
 */
 void OverviewPage::on_pushButton_Explorer_clicked() {
-    QDesktopServices::openUrl(QUrl("https://esbc.pro/link/explorer", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://vitakingexplorer.obscurecoins.com/", QUrl::TolerantMode));
 }

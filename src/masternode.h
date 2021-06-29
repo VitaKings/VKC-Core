@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The esbcoin Core developers
+// Copyright (c) 2018-2019 The vkcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -125,8 +125,7 @@ public:
     enum LevelValue : unsigned {
         UNSPECIFIED = 0u,
         MIN = 1u,
-//        MAX = 3u,
-        MAX = 4u,
+        MAX = 3u,
     };
 
     CTxIn vin;

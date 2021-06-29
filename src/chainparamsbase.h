@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between esbcoin-cli and esbcoind)
- * of a given instance of the esbcoin system.
+ * CBaseChainParams defines the base parameters (shared between vkcoin-cli and vkcoind)
+ * of a given instance of the vkcoin system.
  */
 class CBaseChainParams
 {
