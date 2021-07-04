@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The vkcoin Core developers
+// Copyright (c) 2018-2021 The ESBC Core developers
+// Copyright (c) 2021 The VKC Core developers
 
 #include "multisenddialog.h"
 #include "addressbookpage.h"
