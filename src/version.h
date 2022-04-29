@@ -14,14 +14,14 @@
  * network protocol versioning
  */
 
-static const int PROTOCOL_VERSION = 70225;
+static const int PROTOCOL_VERSION = 70226;
 
 //! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70223;
-static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70225;
+static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70225;
+static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70226;
 
 static const int CONSENSUS_FORK_REWARD_UPDATE_PROTOCOL = 70225; //Keeping for history, not being used other then dev fee
-static const int CONSENSUS_FORK_REWARD_UPDATE_BLOCK = 685000;	//Keeping for history, not being used other then dev fee
+static const int CONSENSUS_FORK_REWARD_UPDATE_BLOCK = INT_MAX;	//Keeping for history, not being used other then dev fee
 
 static const int CONSENSUS_FORK_PROTO = 70223;           // Keeping for history, not used in this fork
 static const int CONSENSUS_FORK_PROTO_TIME = 1554746400; // Monday, 08-Apr-19 18:00:00 UTC Not used in this chain
