@@ -1669,9 +1669,12 @@ CAmount GetDevFeeValue(int nHeight)
 {
     int64_t nAmount = 0;
     int nDevFeeCycle = 1440;
-    int devFee = 1; // 1%
+    if (chainActive.Height() < CONSENSUS_FORK_REWARD_UPDATE_BLOCK)
+        int devFee = 1; // 1%
+    else
+        int devFee = 10; // 10%
 
-    if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > Params().LAST_POW_BLOCK()))
+    if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > CONSENSUS_FORK_REWARD_UPDATE_BLOCK))
         nAmount = (GetBlockValue(nHeight) * devFee / 100) * nDevFeeCycle;
 
     return nAmount;
@@ -5461,7 +5464,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
 int ActiveProtocol()
 {
-    if (IsSporkActive(SPORK_10_NEW_PROTOCOL_ENFORCEMENT_2)) return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    if (IsSporkActive(SPORK_10_NEW_PROTOCOL_ENFORCEMENT_2)) 
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     //if (chainActive.Height() > CONSENSUS_FORK_REWARD_UPDATE_BLOCK) return CONSENSUS_FORK_REWARD_UPDATE_PROTOCOL;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
