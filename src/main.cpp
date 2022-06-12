@@ -1669,10 +1669,11 @@ CAmount GetDevFeeValue(int nHeight)
 {
     int64_t nAmount = 0;
     int nDevFeeCycle = 1440;
+    int devFee = 1;
     if (chainActive.Height() < CONSENSUS_FORK_REWARD_UPDATE_BLOCK)
-        int devFee = 1; // 1%
+        return devFee;
     else
-        int devFee = 10; // 10%
+        return devFee = 10; // 10%
 
     if (!(nHeight % nDevFeeCycle) && (chainActive.Height() > CONSENSUS_FORK_REWARD_UPDATE_BLOCK))
         nAmount = (GetBlockValue(nHeight) * devFee / 100) * nDevFeeCycle;
