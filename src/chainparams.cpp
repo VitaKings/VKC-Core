@@ -188,12 +188,16 @@ public:
         nPoolMaxTransactions = 3;
 
         nStakeInputMin = 10 * COIN;
-        strDevFeeAddressOld = "eGex3AckmWNYYAPHYBD8o3DGsGX4JenrLc";
-        strDevFeeAddress = "VEUH9SuhcQK56SmiCvSUu1ouotN8N9afT5";
+        strDevFeeAddressOld = "VEUH9SuhcQK56SmiCvSUu1ouotN8N9afT5";
+        strDevFeeAddress = "VR9wVnuTi7H2FSjh1xy9WYmR4BW8KifcAH";
 
-        vAlertPubKey = ParseHex("03a97ad0c5c16f22845340eb10d8786e0be405332388606f0c6f2d5acee08f52fd");
-        vGMPubKey = ParseHex("03a97ad0c5c16f22845340eb10d8786e0be405332388606f0c6f2d5acee08f52fd");
-        strSporkKey = "02340828c2ea2398a576e4ac24f543952b17e7e0ff15bad28a034e927110a09ecb";
+        vAlertPubKey = ParseHex("02220084c40c6daedee5cc6da2a7f9f99e37e139e8e15a8750267a2fceb1bca424");
+        vGMPubKey = ParseHex("02220084c40c6daedee5cc6da2a7f9f99e37e139e8e15a8750267a2fceb1bca424");
+
+        nEnforceNewSporkKey = 1658119584; //!> Sporks signed after Mon Jul 18 2022 04:46:24 GMT+0000 must use the new spork key
+        nRejectOldSporkKey = 1658292384;  //!> Fully reject old spork key after Wed Jul 20 2022 04:46:24 GMT+0000
+        strSporkKey = "030b2b75d0baaee641cb3635b596e276270f542d881cde7e6cd750ec6474bb458f";
+        strSporkKeyOld = "02340828c2ea2398a576e4ac24f543952b17e7e0ff15bad28a034e927110a09ecb";		
         strObfuscationPoolDummyAddress = "VQXk5GzAVrfLozJNruP2Qkmu4Aw4PeYtuv";
 
     }
