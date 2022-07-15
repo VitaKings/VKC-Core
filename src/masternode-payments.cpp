@@ -245,7 +245,7 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
             auto winner_mn = mnodeman.Find(winner.payee);
 
             if (!winner_mn) {
-                LogPrintf("mnwp - unknown payee %s\n", payee_addr.ToString().c_str());
+                //LogPrintf("mnwp - unknown payee %s\n", payee_addr.ToString().c_str());
                 continue;
             }
 
