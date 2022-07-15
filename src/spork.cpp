@@ -238,7 +238,7 @@ bool CSporkManager::CheckSignature(CSporkMessage& spork, bool fCheckSigner)
 
     //return true;
 
-    bool fValidWithNewKey = obfuScationSigner.VerifyMessage(pubkeynew, spork.vchSig, strMessage, errorMessage);
+    bool fValidWithNewKey = obfuScationSigner.VerifyMessage(pubkey, spork.vchSig, strMessage, errorMessage);
 
     if (fCheckSigner && !fValidWithNewKey)
         return false;
