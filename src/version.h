@@ -14,11 +14,11 @@
  * network protocol versioning
  */
 
-static const int PROTOCOL_VERSION = 70227;
+static const int PROTOCOL_VERSION = 70228;
 
 //! disconnect from peers older than this proto version
 static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70225;
-static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70227;
+static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70228;
 
 //! Need to fork to remove AU Mattycoz AU  Discord ID: 360279208049508353 spork keys since he turned scam
 static const int CONSENSUS_FORK_REWARD_UPDATE_PROTOCOL = 70225;
